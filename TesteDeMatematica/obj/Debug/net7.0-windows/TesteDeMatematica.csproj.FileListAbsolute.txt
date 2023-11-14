@@ -1,0 +1,16 @@
+C:\Users\arthu\OneDrive\Área de Trabalho\Prog\ShootingClub-WindowsForms\ShootingClub-WindowsForms\TesteDeMatematica\bin\Debug\net7.0-windows\TesteDeMatematica.exe
+C:\Users\arthu\OneDrive\Área de Trabalho\Prog\ShootingClub-WindowsForms\ShootingClub-WindowsForms\TesteDeMatematica\bin\Debug\net7.0-windows\TesteDeMatematica.deps.json
+C:\Users\arthu\OneDrive\Área de Trabalho\Prog\ShootingClub-WindowsForms\ShootingClub-WindowsForms\TesteDeMatematica\bin\Debug\net7.0-windows\TesteDeMatematica.runtimeconfig.json
+C:\Users\arthu\OneDrive\Área de Trabalho\Prog\ShootingClub-WindowsForms\ShootingClub-WindowsForms\TesteDeMatematica\bin\Debug\net7.0-windows\TesteDeMatematica.dll
+C:\Users\arthu\OneDrive\Área de Trabalho\Prog\ShootingClub-WindowsForms\ShootingClub-WindowsForms\TesteDeMatematica\bin\Debug\net7.0-windows\TesteDeMatematica.pdb
+C:\Users\arthu\OneDrive\Área de Trabalho\Prog\ShootingClub-WindowsForms\ShootingClub-WindowsForms\TesteDeMatematica\obj\Debug\net7.0-windows\TesteDeMatematica.Form1.resources
+C:\Users\arthu\OneDrive\Área de Trabalho\Prog\ShootingClub-WindowsForms\ShootingClub-WindowsForms\TesteDeMatematica\obj\Debug\net7.0-windows\TesteDeMatematica.csproj.GenerateResource.cache
+C:\Users\arthu\OneDrive\Área de Trabalho\Prog\ShootingClub-WindowsForms\ShootingClub-WindowsForms\TesteDeMatematica\obj\Debug\net7.0-windows\TesteDeMatematica.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\arthu\OneDrive\Área de Trabalho\Prog\ShootingClub-WindowsForms\ShootingClub-WindowsForms\TesteDeMatematica\obj\Debug\net7.0-windows\TesteDeMatematica.AssemblyInfoInputs.cache
+C:\Users\arthu\OneDrive\Área de Trabalho\Prog\ShootingClub-WindowsForms\ShootingClub-WindowsForms\TesteDeMatematica\obj\Debug\net7.0-windows\TesteDeMatematica.AssemblyInfo.cs
+C:\Users\arthu\OneDrive\Área de Trabalho\Prog\ShootingClub-WindowsForms\ShootingClub-WindowsForms\TesteDeMatematica\obj\Debug\net7.0-windows\TesteDeMatematica.csproj.CoreCompileInputs.cache
+C:\Users\arthu\OneDrive\Área de Trabalho\Prog\ShootingClub-WindowsForms\ShootingClub-WindowsForms\TesteDeMatematica\obj\Debug\net7.0-windows\TesteDeMatematica.dll
+C:\Users\arthu\OneDrive\Área de Trabalho\Prog\ShootingClub-WindowsForms\ShootingClub-WindowsForms\TesteDeMatematica\obj\Debug\net7.0-windows\refint\TesteDeMatematica.dll
+C:\Users\arthu\OneDrive\Área de Trabalho\Prog\ShootingClub-WindowsForms\ShootingClub-WindowsForms\TesteDeMatematica\obj\Debug\net7.0-windows\TesteDeMatematica.pdb
+C:\Users\arthu\OneDrive\Área de Trabalho\Prog\ShootingClub-WindowsForms\ShootingClub-WindowsForms\TesteDeMatematica\obj\Debug\net7.0-windows\TesteDeMatematica.genruntimeconfig.cache
+C:\Users\arthu\OneDrive\Área de Trabalho\Prog\ShootingClub-WindowsForms\ShootingClub-WindowsForms\TesteDeMatematica\obj\Debug\net7.0-windows\ref\TesteDeMatematica.dll

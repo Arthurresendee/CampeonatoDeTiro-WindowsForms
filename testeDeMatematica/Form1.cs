@@ -1,4 +1,4 @@
-namespace testeDeMatematica
+namespace TesteDeMatematica
 {
     public partial class Form1 : Form
     {
@@ -6,5 +6,6 @@ namespace testeDeMatematica
         {
             InitializeComponent();
         }
+
     }
 }

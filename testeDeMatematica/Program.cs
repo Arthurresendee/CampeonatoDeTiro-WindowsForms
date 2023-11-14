@@ -1,4 +1,4 @@
-namespace testeDeMatematica
+namespace TesteDeMatematica
 {
     internal static class Program
     {
