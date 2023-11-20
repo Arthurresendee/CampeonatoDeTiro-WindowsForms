@@ -1,0 +1,16 @@
+C:\Users\arthu\OneDrive\Área de Trabalho\Prog\ShootingClub-WindowsForms\ShootingClub-WindowsForms\PrimeiroProjeto\bin\Debug\net7.0-windows\PrimeiroProjeto.exe
+C:\Users\arthu\OneDrive\Área de Trabalho\Prog\ShootingClub-WindowsForms\ShootingClub-WindowsForms\PrimeiroProjeto\bin\Debug\net7.0-windows\PrimeiroProjeto.deps.json
+C:\Users\arthu\OneDrive\Área de Trabalho\Prog\ShootingClub-WindowsForms\ShootingClub-WindowsForms\PrimeiroProjeto\bin\Debug\net7.0-windows\PrimeiroProjeto.runtimeconfig.json
+C:\Users\arthu\OneDrive\Área de Trabalho\Prog\ShootingClub-WindowsForms\ShootingClub-WindowsForms\PrimeiroProjeto\bin\Debug\net7.0-windows\PrimeiroProjeto.dll
+C:\Users\arthu\OneDrive\Área de Trabalho\Prog\ShootingClub-WindowsForms\ShootingClub-WindowsForms\PrimeiroProjeto\bin\Debug\net7.0-windows\PrimeiroProjeto.pdb
+C:\Users\arthu\OneDrive\Área de Trabalho\Prog\ShootingClub-WindowsForms\ShootingClub-WindowsForms\PrimeiroProjeto\obj\Debug\net7.0-windows\PrimeiroProjeto.Form1.resources
+C:\Users\arthu\OneDrive\Área de Trabalho\Prog\ShootingClub-WindowsForms\ShootingClub-WindowsForms\PrimeiroProjeto\obj\Debug\net7.0-windows\PrimeiroProjeto.csproj.GenerateResource.cache
+C:\Users\arthu\OneDrive\Área de Trabalho\Prog\ShootingClub-WindowsForms\ShootingClub-WindowsForms\PrimeiroProjeto\obj\Debug\net7.0-windows\PrimeiroProjeto.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\arthu\OneDrive\Área de Trabalho\Prog\ShootingClub-WindowsForms\ShootingClub-WindowsForms\PrimeiroProjeto\obj\Debug\net7.0-windows\PrimeiroProjeto.AssemblyInfoInputs.cache
+C:\Users\arthu\OneDrive\Área de Trabalho\Prog\ShootingClub-WindowsForms\ShootingClub-WindowsForms\PrimeiroProjeto\obj\Debug\net7.0-windows\PrimeiroProjeto.AssemblyInfo.cs
+C:\Users\arthu\OneDrive\Área de Trabalho\Prog\ShootingClub-WindowsForms\ShootingClub-WindowsForms\PrimeiroProjeto\obj\Debug\net7.0-windows\PrimeiroProjeto.csproj.CoreCompileInputs.cache
+C:\Users\arthu\OneDrive\Área de Trabalho\Prog\ShootingClub-WindowsForms\ShootingClub-WindowsForms\PrimeiroProjeto\obj\Debug\net7.0-windows\PrimeiroProjeto.dll
+C:\Users\arthu\OneDrive\Área de Trabalho\Prog\ShootingClub-WindowsForms\ShootingClub-WindowsForms\PrimeiroProjeto\obj\Debug\net7.0-windows\refint\PrimeiroProjeto.dll
+C:\Users\arthu\OneDrive\Área de Trabalho\Prog\ShootingClub-WindowsForms\ShootingClub-WindowsForms\PrimeiroProjeto\obj\Debug\net7.0-windows\PrimeiroProjeto.pdb
+C:\Users\arthu\OneDrive\Área de Trabalho\Prog\ShootingClub-WindowsForms\ShootingClub-WindowsForms\PrimeiroProjeto\obj\Debug\net7.0-windows\PrimeiroProjeto.genruntimeconfig.cache
+C:\Users\arthu\OneDrive\Área de Trabalho\Prog\ShootingClub-WindowsForms\ShootingClub-WindowsForms\PrimeiroProjeto\obj\Debug\net7.0-windows\ref\PrimeiroProjeto.dll

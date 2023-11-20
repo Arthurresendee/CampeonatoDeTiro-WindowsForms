@@ -6,5 +6,11 @@ namespace PrimeiroProjeto
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string nome = textBox1.Text;
+            MessageBox.Show($"o texto é {nome}");
+        }
     }
 }
