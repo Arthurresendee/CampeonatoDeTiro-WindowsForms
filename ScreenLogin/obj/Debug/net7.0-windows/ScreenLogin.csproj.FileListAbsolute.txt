@@ -1,0 +1,16 @@
+C:\Users\arthu\OneDrive\Área de Trabalho\Prog\ShootingClub-WindowsForms\ShootingClub-WindowsForms\ScreenLogin\bin\Debug\net7.0-windows\ScreenLogin.exe
+C:\Users\arthu\OneDrive\Área de Trabalho\Prog\ShootingClub-WindowsForms\ShootingClub-WindowsForms\ScreenLogin\bin\Debug\net7.0-windows\ScreenLogin.deps.json
+C:\Users\arthu\OneDrive\Área de Trabalho\Prog\ShootingClub-WindowsForms\ShootingClub-WindowsForms\ScreenLogin\bin\Debug\net7.0-windows\ScreenLogin.runtimeconfig.json
+C:\Users\arthu\OneDrive\Área de Trabalho\Prog\ShootingClub-WindowsForms\ShootingClub-WindowsForms\ScreenLogin\bin\Debug\net7.0-windows\ScreenLogin.dll
+C:\Users\arthu\OneDrive\Área de Trabalho\Prog\ShootingClub-WindowsForms\ShootingClub-WindowsForms\ScreenLogin\bin\Debug\net7.0-windows\ScreenLogin.pdb
+C:\Users\arthu\OneDrive\Área de Trabalho\Prog\ShootingClub-WindowsForms\ShootingClub-WindowsForms\ScreenLogin\obj\Debug\net7.0-windows\ScreenLogin.csproj.GenerateResource.cache
+C:\Users\arthu\OneDrive\Área de Trabalho\Prog\ShootingClub-WindowsForms\ShootingClub-WindowsForms\ScreenLogin\obj\Debug\net7.0-windows\ScreenLogin.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\arthu\OneDrive\Área de Trabalho\Prog\ShootingClub-WindowsForms\ShootingClub-WindowsForms\ScreenLogin\obj\Debug\net7.0-windows\ScreenLogin.AssemblyInfoInputs.cache
+C:\Users\arthu\OneDrive\Área de Trabalho\Prog\ShootingClub-WindowsForms\ShootingClub-WindowsForms\ScreenLogin\obj\Debug\net7.0-windows\ScreenLogin.AssemblyInfo.cs
+C:\Users\arthu\OneDrive\Área de Trabalho\Prog\ShootingClub-WindowsForms\ShootingClub-WindowsForms\ScreenLogin\obj\Debug\net7.0-windows\ScreenLogin.csproj.CoreCompileInputs.cache
+C:\Users\arthu\OneDrive\Área de Trabalho\Prog\ShootingClub-WindowsForms\ShootingClub-WindowsForms\ScreenLogin\obj\Debug\net7.0-windows\ScreenLogin.dll
+C:\Users\arthu\OneDrive\Área de Trabalho\Prog\ShootingClub-WindowsForms\ShootingClub-WindowsForms\ScreenLogin\obj\Debug\net7.0-windows\refint\ScreenLogin.dll
+C:\Users\arthu\OneDrive\Área de Trabalho\Prog\ShootingClub-WindowsForms\ShootingClub-WindowsForms\ScreenLogin\obj\Debug\net7.0-windows\ScreenLogin.pdb
+C:\Users\arthu\OneDrive\Área de Trabalho\Prog\ShootingClub-WindowsForms\ShootingClub-WindowsForms\ScreenLogin\obj\Debug\net7.0-windows\ScreenLogin.genruntimeconfig.cache
+C:\Users\arthu\OneDrive\Área de Trabalho\Prog\ShootingClub-WindowsForms\ShootingClub-WindowsForms\ScreenLogin\obj\Debug\net7.0-windows\ref\ScreenLogin.dll
+C:\Users\arthu\OneDrive\Área de Trabalho\Prog\ShootingClub-WindowsForms\ShootingClub-WindowsForms\ScreenLogin\obj\Debug\net7.0-windows\ScreenLogin.Form_Login.resources
