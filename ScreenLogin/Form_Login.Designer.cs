@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
+            linklbl_cadastro = new LinkLabel();
             linklbl_recuperaSenha = new LinkLabel();
             btn_Login = new Button();
             txt_usuario = new TextBox();
@@ -38,7 +39,6 @@
             lbl_usuario = new Label();
             label5 = new Label();
             label4 = new Label();
-            linklbl_cadastro = new LinkLabel();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -58,6 +58,20 @@
             panel1.Size = new Size(281, 357);
             panel1.TabIndex = 11;
             // 
+            // linklbl_cadastro
+            // 
+            linklbl_cadastro.ActiveLinkColor = SystemColors.MenuHighlight;
+            linklbl_cadastro.AutoSize = true;
+            linklbl_cadastro.Font = new Font("Segoe UI", 7F, FontStyle.Regular, GraphicsUnit.Point);
+            linklbl_cadastro.LinkColor = Color.White;
+            linklbl_cadastro.Location = new Point(92, 314);
+            linklbl_cadastro.Name = "linklbl_cadastro";
+            linklbl_cadastro.Size = new Size(99, 12);
+            linklbl_cadastro.TabIndex = 9;
+            linklbl_cadastro.TabStop = true;
+            linklbl_cadastro.Text = "Não Possui Cadastro?";
+            linklbl_cadastro.LinkClicked += linklbl_cadastro_LinkClicked;
+            // 
             // linklbl_recuperaSenha
             // 
             linklbl_recuperaSenha.ActiveLinkColor = SystemColors.MenuHighlight;
@@ -70,6 +84,7 @@
             linklbl_recuperaSenha.TabIndex = 8;
             linklbl_recuperaSenha.TabStop = true;
             linklbl_recuperaSenha.Text = "Esqueceu sua senha?";
+            linklbl_recuperaSenha.MouseClick += linklbl_recuperaSenha_MouseClick;
             // 
             // btn_Login
             // 
@@ -160,19 +175,6 @@
             label4.TabIndex = 9;
             label4.Text = "Welcome to";
             // 
-            // linklbl_cadastro
-            // 
-            linklbl_cadastro.ActiveLinkColor = SystemColors.MenuHighlight;
-            linklbl_cadastro.AutoSize = true;
-            linklbl_cadastro.Font = new Font("Segoe UI", 7F, FontStyle.Regular, GraphicsUnit.Point);
-            linklbl_cadastro.LinkColor = Color.White;
-            linklbl_cadastro.Location = new Point(92, 314);
-            linklbl_cadastro.Name = "linklbl_cadastro";
-            linklbl_cadastro.Size = new Size(99, 12);
-            linklbl_cadastro.TabIndex = 9;
-            linklbl_cadastro.TabStop = true;
-            linklbl_cadastro.Text = "Não Possui Cadastro?";
-            // 
             // Form_Login
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -184,7 +186,7 @@
             Controls.Add(label4);
             ForeColor = SystemColors.ControlLightLight;
             Name = "Form_Login";
-            Text = "Form1";
+            Text = "Login";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ResumeLayout(false);

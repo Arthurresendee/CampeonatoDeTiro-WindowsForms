@@ -14,3 +14,5 @@ C:\Users\arthu\OneDrive\Área de Trabalho\Prog\ShootingClub-WindowsForms\Shootin
 C:\Users\arthu\OneDrive\Área de Trabalho\Prog\ShootingClub-WindowsForms\ShootingClub-WindowsForms\ScreenLogin\obj\Debug\net7.0-windows\ScreenLogin.genruntimeconfig.cache
 C:\Users\arthu\OneDrive\Área de Trabalho\Prog\ShootingClub-WindowsForms\ShootingClub-WindowsForms\ScreenLogin\obj\Debug\net7.0-windows\ref\ScreenLogin.dll
 C:\Users\arthu\OneDrive\Área de Trabalho\Prog\ShootingClub-WindowsForms\ShootingClub-WindowsForms\ScreenLogin\obj\Debug\net7.0-windows\ScreenLogin.Form_Login.resources
+C:\Users\arthu\OneDrive\Área de Trabalho\Prog\ShootingClub-WindowsForms\ShootingClub-WindowsForms\ScreenLogin\obj\Debug\net7.0-windows\ScreenLogin.Form_RecuperaSenha.resources
+C:\Users\arthu\OneDrive\Área de Trabalho\Prog\ShootingClub-WindowsForms\ShootingClub-WindowsForms\ScreenLogin\obj\Debug\net7.0-windows\ScreenLogin.Form_NovoCadastro.resources
