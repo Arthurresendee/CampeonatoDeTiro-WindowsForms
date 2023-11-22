@@ -67,7 +67,7 @@
             linklbl_cadastro.Location = new Point(92, 314);
             linklbl_cadastro.Name = "linklbl_cadastro";
             linklbl_cadastro.Size = new Size(99, 12);
-            linklbl_cadastro.TabIndex = 9;
+            linklbl_cadastro.TabIndex = 0;
             linklbl_cadastro.TabStop = true;
             linklbl_cadastro.Text = "Não Possui Cadastro?";
             linklbl_cadastro.LinkClicked += linklbl_cadastro_LinkClicked;
@@ -81,9 +81,10 @@
             linklbl_recuperaSenha.Location = new Point(145, 225);
             linklbl_recuperaSenha.Name = "linklbl_recuperaSenha";
             linklbl_recuperaSenha.Size = new Size(98, 12);
-            linklbl_recuperaSenha.TabIndex = 8;
+            linklbl_recuperaSenha.TabIndex = 0;
             linklbl_recuperaSenha.TabStop = true;
             linklbl_recuperaSenha.Text = "Esqueceu sua senha?";
+            linklbl_recuperaSenha.LinkClicked += linklbl_recuperaSenha_LinkClicked;
             linklbl_recuperaSenha.MouseClick += linklbl_recuperaSenha_MouseClick;
             // 
             // btn_Login
@@ -93,17 +94,18 @@
             btn_Login.Location = new Point(87, 266);
             btn_Login.Name = "btn_Login";
             btn_Login.Size = new Size(110, 33);
-            btn_Login.TabIndex = 7;
+            btn_Login.TabIndex = 3;
             btn_Login.Text = "Login";
             btn_Login.UseVisualStyleBackColor = true;
             btn_Login.Click += btn_Login_Click;
             // 
             // txt_usuario
             // 
+            txt_usuario.ForeColor = SystemColors.WindowText;
             txt_usuario.Location = new Point(37, 129);
             txt_usuario.Name = "txt_usuario";
             txt_usuario.Size = new Size(206, 23);
-            txt_usuario.TabIndex = 5;
+            txt_usuario.TabIndex = 1;
             // 
             // label1
             // 
@@ -122,7 +124,7 @@
             txt_senha.Location = new Point(37, 199);
             txt_senha.Name = "txt_senha";
             txt_senha.Size = new Size(206, 23);
-            txt_senha.TabIndex = 6;
+            txt_senha.TabIndex = 2;
             txt_senha.UseSystemPasswordChar = true;
             // 
             // lbl_senha
@@ -134,7 +136,7 @@
             lbl_senha.Location = new Point(37, 175);
             lbl_senha.Name = "lbl_senha";
             lbl_senha.Size = new Size(53, 21);
-            lbl_senha.TabIndex = 2;
+            lbl_senha.TabIndex = 0;
             lbl_senha.Text = "Senha";
             // 
             // lbl_usuario
@@ -146,7 +148,7 @@
             lbl_usuario.Location = new Point(37, 105);
             lbl_usuario.Name = "lbl_usuario";
             lbl_usuario.Size = new Size(64, 21);
-            lbl_usuario.TabIndex = 1;
+            lbl_usuario.TabIndex = 0;
             lbl_usuario.Text = "Usuário";
             // 
             // label5
@@ -159,7 +161,7 @@
             label5.Margin = new Padding(0);
             label5.Name = "label5";
             label5.Size = new Size(244, 46);
-            label5.TabIndex = 10;
+            label5.TabIndex = 0;
             label5.Text = "shooting Club";
             // 
             // label4
@@ -172,7 +174,7 @@
             label4.Margin = new Padding(0);
             label4.Name = "label4";
             label4.Size = new Size(210, 46);
-            label4.TabIndex = 9;
+            label4.TabIndex = 0;
             label4.Text = "Welcome to";
             // 
             // Form_Login
