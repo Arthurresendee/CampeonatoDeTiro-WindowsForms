@@ -21,12 +21,10 @@ namespace ScreenLogin
                 this.Hide();
                 form.ShowDialog();
             }
-
-            if (txt_usuario.Text != usuarioLogin && txt_senha.Text != senhaLogin)
+            else //(txt_usuario.Text != usuarioLogin && txt_senha.Text != senhaLogin)
             {
                 tentativasDeLogin += 1;
                 txt_senha.Clear();
-                txt_usuario.Clear();
 
                 lbl_erroLogin.Enabled = true;
                 lbl_erroLogin.ForeColor = Color.Red;
@@ -40,9 +38,9 @@ namespace ScreenLogin
                 lbl_erroLogin2.Enabled = true;
             }
 
-            if (tentativasDeLogin == 3)
+            if (tentativasDeLogin == 3 || tentativasDeLogin == 6 || tentativasDeLogin == 9)
             {
-                DialogResult retorno = MessageBox.Show("Deseja fazer a recuperação?", "USUÁRIO OU SENHA INCORRETOS", MessageBoxButtons.YesNo,MessageBoxIcon.Error);
+                DialogResult retorno = MessageBox.Show("Deseja fazer a recuperação?", "USUÁRIO OU SENHA INCORRETOS", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
 
                 if (retorno == DialogResult.Yes)
                 {
@@ -54,22 +52,21 @@ namespace ScreenLogin
         }
 
         #region LinkLabel para cadastrar e recuperar senha
-        private void linklbl_recuperaSenha_MouseClick(object sender, MouseEventArgs e)
+        private void linklbl_recuperaSenha_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Form_RecuperaSenha form = new();
             form.ShowDialog();
         }
-
         private void linklbl_cadastro_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Form_NovoCadastro form = new();
             form.ShowDialog();
         }
+        private void linklbl_recuperaSenha_MouseClick(object sender, MouseEventArgs e)
+        {
+        }
+
         #endregion
 
-        private void linklbl_recuperaSenha_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-
-        }
     }
 }

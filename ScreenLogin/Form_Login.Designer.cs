@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
+            lbl_erroLogin2 = new Label();
+            lbl_erroLogin = new Label();
             linklbl_cadastro = new LinkLabel();
             linklbl_recuperaSenha = new LinkLabel();
             btn_Login = new Button();
@@ -39,8 +41,6 @@
             lbl_usuario = new Label();
             label5 = new Label();
             label4 = new Label();
-            lbl_erroLogin = new Label();
-            lbl_erroLogin2 = new Label();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -62,13 +62,33 @@
             panel1.Size = new Size(281, 357);
             panel1.TabIndex = 11;
             // 
+            // lbl_erroLogin2
+            // 
+            lbl_erroLogin2.AutoSize = true;
+            lbl_erroLogin2.Font = new Font("Segoe UI", 7F, FontStyle.Regular, GraphicsUnit.Point);
+            lbl_erroLogin2.Location = new Point(129, 225);
+            lbl_erroLogin2.Name = "lbl_erroLogin2";
+            lbl_erroLogin2.Size = new Size(114, 12);
+            lbl_erroLogin2.TabIndex = 6;
+            lbl_erroLogin2.Text = "Email ou senha incorreto";
+            // 
+            // lbl_erroLogin
+            // 
+            lbl_erroLogin.AutoSize = true;
+            lbl_erroLogin.Font = new Font("Segoe UI", 7F, FontStyle.Regular, GraphicsUnit.Point);
+            lbl_erroLogin.Location = new Point(129, 155);
+            lbl_erroLogin.Name = "lbl_erroLogin";
+            lbl_erroLogin.Size = new Size(114, 12);
+            lbl_erroLogin.TabIndex = 4;
+            lbl_erroLogin.Text = "Email ou senha incorreto";
+            // 
             // linklbl_cadastro
             // 
             linklbl_cadastro.ActiveLinkColor = SystemColors.MenuHighlight;
             linklbl_cadastro.AutoSize = true;
             linklbl_cadastro.Font = new Font("Segoe UI", 7F, FontStyle.Regular, GraphicsUnit.Point);
             linklbl_cadastro.LinkColor = Color.White;
-            linklbl_cadastro.Location = new Point(27, 317);
+            linklbl_cadastro.Location = new Point(40, 317);
             linklbl_cadastro.Name = "linklbl_cadastro";
             linklbl_cadastro.Size = new Size(99, 12);
             linklbl_cadastro.TabIndex = 0;
@@ -82,7 +102,7 @@
             linklbl_recuperaSenha.AutoSize = true;
             linklbl_recuperaSenha.Font = new Font("Segoe UI", 7F, FontStyle.Regular, GraphicsUnit.Point);
             linklbl_recuperaSenha.LinkColor = Color.White;
-            linklbl_recuperaSenha.Location = new Point(92, 251);
+            linklbl_recuperaSenha.Location = new Point(147, 317);
             linklbl_recuperaSenha.Name = "linklbl_recuperaSenha";
             linklbl_recuperaSenha.Size = new Size(98, 12);
             linklbl_recuperaSenha.TabIndex = 0;
@@ -180,26 +200,6 @@
             label4.Size = new Size(210, 46);
             label4.TabIndex = 0;
             label4.Text = "Welcome to";
-            // 
-            // lbl_erroLogin
-            // 
-            lbl_erroLogin.AutoSize = true;
-            lbl_erroLogin.Font = new Font("Segoe UI", 7F, FontStyle.Regular, GraphicsUnit.Point);
-            lbl_erroLogin.Location = new Point(129, 155);
-            lbl_erroLogin.Name = "lbl_erroLogin";
-            lbl_erroLogin.Size = new Size(114, 12);
-            lbl_erroLogin.TabIndex = 4;
-            lbl_erroLogin.Text = "Email ou senha incorreto";
-            // 
-            // lbl_erroLogin2
-            // 
-            lbl_erroLogin2.AutoSize = true;
-            lbl_erroLogin2.Font = new Font("Segoe UI", 7F, FontStyle.Regular, GraphicsUnit.Point);
-            lbl_erroLogin2.Location = new Point(129, 225);
-            lbl_erroLogin2.Name = "lbl_erroLogin2";
-            lbl_erroLogin2.Size = new Size(114, 12);
-            lbl_erroLogin2.TabIndex = 6;
-            lbl_erroLogin2.Text = "Email ou senha incorreto";
             // 
             // Form_Login
             // 
