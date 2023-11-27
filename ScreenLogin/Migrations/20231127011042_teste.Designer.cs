@@ -11,7 +11,7 @@ using ScreenLogin.Data;
 
 namespace ScreenLogin.Migrations
 {
-    [DbContext(typeof(LoginContext))]
+    [DbContext(typeof(UsuarioContext))]
     [Migration("20231127011042_teste")]
     partial class teste
     {

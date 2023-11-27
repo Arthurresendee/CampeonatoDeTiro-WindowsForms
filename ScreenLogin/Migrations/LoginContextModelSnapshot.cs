@@ -10,7 +10,7 @@ using ScreenLogin.Data;
 
 namespace ScreenLogin.Migrations
 {
-    [DbContext(typeof(LoginContext))]
+    [DbContext(typeof(UsuarioContext))]
     partial class LoginContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)

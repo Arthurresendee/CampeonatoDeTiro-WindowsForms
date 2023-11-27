@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace ScreenLogin.Data
 {
-    public class LoginContext : DbContext
+    public class UsuarioContext : DbContext
     {
         public DbSet<UsuarioLoginModel> UsuariosLogins { get; set; }
         public DbSet<UsuarioModel> Usuarios { get; set; }
