@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using ScreenLogin.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +10,8 @@ namespace ScreenLogin.Data
 {
     public class LoginContext : DbContext
     {
-        public DbSet<Usuario> Usuarios { get; set; }
+        public DbSet<UsuarioLoginModel> UsuariosLogins { get; set; }
+        public DbSet<UsuarioModel> Usuarios { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

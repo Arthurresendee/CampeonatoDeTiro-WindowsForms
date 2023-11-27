@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ScreenLogin.Data
+namespace ScreenLogin.Models
 {
-    public class Usuario
+    public class UsuarioLoginModel
     {
         public int Id { get; set; }
         public string Nome { get; set; }
-        public string SenhaHash { get; set; }
+        public string Senha { get; set; }
     }
 }

@@ -68,5 +68,9 @@ namespace ScreenLogin
 
         #endregion
 
+        private void Form_Login_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

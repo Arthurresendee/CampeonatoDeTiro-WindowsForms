@@ -213,6 +213,7 @@
             ForeColor = SystemColors.ControlLightLight;
             Name = "Form_Login";
             Text = "Login";
+            Load += Form_Login_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ResumeLayout(false);
