@@ -24,5 +24,6 @@ namespace ScreenLogin.Models
             Feminino = 1,
             PrefiroNaoDizer = 2
         }
+
     }
 }

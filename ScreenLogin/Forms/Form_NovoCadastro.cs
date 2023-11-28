@@ -15,8 +15,10 @@ namespace ScreenLogin
 {
     public partial class Form_NovoCadastro : Form
     {
-        public Form_NovoCadastro()
+        private readonly UsuarioService _usuarioService;
+        public Form_NovoCadastro(UsuarioService usuarioService)
         {
+            _usuarioService = usuarioService;
             InitializeComponent();
         }
         private void button1_Click(object sender, EventArgs e)
@@ -31,9 +33,7 @@ namespace ScreenLogin
             novoUsuario.Senha = txt_senha.Text;
             novoUsuario.ConfirmaSenha = txt_confirmarSenha.Text;
 
-            //UsuarioService usuarioService = new UsuarioService();
-            //usuarioService.InserirUsuario(usuario);
-
+            _usuarioService.InserirUsuario(novoUsuario);
             MessageBox.Show("Usuário cadastrado com sucesso!");
         }
 

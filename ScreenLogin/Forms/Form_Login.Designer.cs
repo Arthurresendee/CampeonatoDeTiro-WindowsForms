@@ -66,6 +66,7 @@
             // 
             lbl_erroLogin2.AutoSize = true;
             lbl_erroLogin2.Font = new Font("Segoe UI", 7F, FontStyle.Regular, GraphicsUnit.Point);
+            lbl_erroLogin2.ForeColor = Color.Red;
             lbl_erroLogin2.Location = new Point(129, 225);
             lbl_erroLogin2.Name = "lbl_erroLogin2";
             lbl_erroLogin2.Size = new Size(114, 12);
@@ -76,6 +77,7 @@
             // 
             lbl_erroLogin.AutoSize = true;
             lbl_erroLogin.Font = new Font("Segoe UI", 7F, FontStyle.Regular, GraphicsUnit.Point);
+            lbl_erroLogin.ForeColor = Color.Red;
             lbl_erroLogin.Location = new Point(129, 155);
             lbl_erroLogin.Name = "lbl_erroLogin";
             lbl_erroLogin.Size = new Size(114, 12);

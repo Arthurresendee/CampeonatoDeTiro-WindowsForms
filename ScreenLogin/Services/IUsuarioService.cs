@@ -1,4 +1,5 @@
-﻿using ScreenLogin.Models;
+﻿using Microsoft.EntityFrameworkCore;
+using ScreenLogin.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,9 +11,6 @@ namespace ScreenLogin.Services
     public interface IUsuarioService
     {
         void InserirUsuario(UsuarioModel usuario);
-        void LerUsuario(); // retorna todos
-        void LerUsuarioPorId(int id);
-        void AtualizarUsuarioPorId(int id);
-        void DeletarUsuarioPorId(int id);
+        UsuarioModel AutenticarUsuario(string nomeDeUsuario, string senha);
     }
 }

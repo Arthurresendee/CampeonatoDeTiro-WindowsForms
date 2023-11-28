@@ -243,6 +243,7 @@
             // 
             // txt_nomeCompleto
             // 
+            txt_nomeCompleto.BorderStyle = BorderStyle.FixedSingle;
             txt_nomeCompleto.Location = new Point(55, 80);
             txt_nomeCompleto.Name = "txt_nomeCompleto";
             txt_nomeCompleto.Size = new Size(358, 23);
@@ -274,7 +275,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.WindowText;
+            BackColor = Color.Black;
             ClientSize = new Size(830, 465);
             Controls.Add(panel1);
             ForeColor = Color.White;

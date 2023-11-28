@@ -12,36 +12,22 @@ namespace ScreenLogin.Services
     //dá para fazer utlizando classe concreta ao invés da injeção de dependencia.
     public class UsuarioService : IUsuarioService
     {
-        private readonly UsuarioContext _usuarioContext;
-        public UsuarioService(UsuarioContext dbcontext)
+        private readonly DataContext _dbContext;
+        public UsuarioService(DataContext dbcontext)
         {
-            _usuarioContext = dbcontext;
+            _dbContext = dbcontext;
         }
 
-        public void AtualizarUsuarioPorId(int id)
+        public UsuarioModel AutenticarUsuario(string nomeDeUsuario, string senha)
         {
-            throw new NotImplementedException();
-        }
-
-        public void DeletarUsuarioPorId(int id)
-        {
-            throw new NotImplementedException();
+            return _dbContext.Usuarios
+                .FirstOrDefault(u => u.NomeDeUsuarioParaLogin == nomeDeUsuario && u.Senha == senha);
         }
 
         public void InserirUsuario(UsuarioModel usuario)
         {   
-            _usuarioContext.Usuarios.Add(usuario);
-            _usuarioContext.SaveChanges();
-        }
-
-        public void LerUsuario()
-        {
-            throw new NotImplementedException();
-        }
-
-        public void LerUsuarioPorId(int id)
-        {
-            throw new NotImplementedException();
+            _dbContext.Usuarios.Add(usuario);
+            _dbContext.SaveChanges();
         }
     }
 }
