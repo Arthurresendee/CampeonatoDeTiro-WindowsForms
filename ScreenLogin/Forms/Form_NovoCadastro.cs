@@ -1,4 +1,5 @@
-﻿using ScreenLogin.Models;
+﻿using Microsoft.VisualBasic;
+using ScreenLogin.Models;
 using ScreenLogin.Services;
 using System;
 using System.Collections.Generic;
@@ -20,21 +21,52 @@ namespace ScreenLogin
         {
             _usuarioService = usuarioService;
             InitializeComponent();
+            lbl_confirmaSenha.Enabled = false;
+            lbl_usuarioExistente.Enabled = false;
         }
+
         private void button1_Click(object sender, EventArgs e)
         {
-            UsuarioModel novoUsuario = new();
-            novoUsuario.NomeCompleto = txt_nomeCompleto.Text;
-            novoUsuario.Email = txt_email.Text;
-            //novoUsuario.DataDeNascimento = txt_DataDeNascimento.Text; Arrumar data De Nascimento
-            //novoUsuario.GeneroUsuario = gpb_genero.Text; Arrumar genero
-            novoUsuario.NumeroDeTelefone = txt_numeroDeTelefone.Text;
-            novoUsuario.NomeDeUsuarioParaLogin = txt_NomeDeUsuario.Text;
-            novoUsuario.Senha = txt_senha.Text;
-            novoUsuario.ConfirmaSenha = txt_confirmarSenha.Text;
+            var novoUsuario = new UsuarioModel
+            {
+                NomeCompleto = txt_nomeCompleto.Text,
+                Email = txt_email.Text,
+                //novoUsuario.DataDeNascimento = txt_DataDeNascimento.Text; Arrumar data De Nascimento
+                //novoUsuario.GeneroUsuario = gpb_genero.Text; Arrumar genero
+                NumeroDeTelefone = txt_numeroDeTelefone.Text,
+                NomeDeUsuarioParaLogin = txt_NomeDeUsuario.Text,
+                Senha = txt_senha.Text,
+                ConfirmaSenha = txt_confirmarSenha.Text
+            };
+            var retornoValidacao = ValidarUsuario(novoUsuario);
 
-            _usuarioService.InserirUsuario(novoUsuario);
-            MessageBox.Show("Usuário cadastrado com sucesso!");
+            if (!retornoValidacao)
+            {
+                //ações a serem tomadas caso haja algum erro de validação.
+                return;
+            }
+            else
+            {
+                _usuarioService.InserirUsuario(novoUsuario);
+                MessageBox.Show("Usuario Inserido com sucesso");
+            }
+
+        }
+
+        private bool ValidarUsuario(UsuarioModel usuario)
+        {
+            var validationResults = Validacao.getValidationErros(usuario);
+
+            if (validationResults.Any())
+            {
+                foreach (var error in validationResults)
+                {
+                    MessageBox.Show((error.ErrorMessage));
+                }
+
+                return false;
+            }
+            return true;
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -60,5 +92,19 @@ namespace ScreenLogin
 
         }
 
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void lbl_usuarioExistente_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_nomeCompleto_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -25,7 +25,7 @@ namespace ScreenLogin
 
             if (usuarioAutenticado != null)
             {
-                Form_Index form = new();
+                var form = new Form_Index();
                 this.Hide();
                 form.ShowDialog();
             }
@@ -44,17 +44,16 @@ namespace ScreenLogin
                 lbl_erroLogin2.Enabled = true;
             }
 
-            //tentativasDeLogin += 1;
-            if (tentativasDeLogin == 3 || tentativasDeLogin == 6 || tentativasDeLogin == 9)
+            if (tentativasDeLogin == 3)
             {
-                DialogResult retorno = MessageBox.Show("Deseja fazer a recuperação?", "USUÁRIO OU SENHA INCORRETOS", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
+                DialogResult retorno = MessageBox.Show("Deseja fazer a recuperação?", "USUÁRIO OU SENHA INCORRETOS", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
 
                 if (retorno == DialogResult.Yes)
                 {
                     Form_RecuperaSenha form = new();
                     form.ShowDialog();
                 }
-                else return;
+                tentativasDeLogin = 0;
             }
         }
 
@@ -67,8 +66,8 @@ namespace ScreenLogin
         private void linklbl_cadastro_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             var dbContext = new DataContext();
-            UsuarioService usuarioService = new UsuarioService(dbContext); // Crie a instância do seu serviço
-            Form_NovoCadastro novoCadastroForm = new Form_NovoCadastro(usuarioService);
+            var usuarioService = new UsuarioService(dbContext);
+            var novoCadastroForm = new Form_NovoCadastro(usuarioService);
             novoCadastroForm.ShowDialog();
         }
         private void linklbl_recuperaSenha_MouseClick(object sender, MouseEventArgs e)

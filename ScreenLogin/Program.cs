@@ -15,8 +15,8 @@ namespace ScreenLogin
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
 
-            DataContext context = new();
-            UsuarioService service = new(context);
+            var context = new DataContext();
+            var service = new UsuarioService(context);
             Application.Run(new Form_Login(service));
 
         }

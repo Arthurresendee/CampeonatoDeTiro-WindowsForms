@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using ScreenLogin.Data;
 
@@ -11,9 +12,11 @@ using ScreenLogin.Data;
 namespace ScreenLogin.Migrations
 {
     [DbContext(typeof(DataContext))]
-    partial class LoginContextModelSnapshot : ModelSnapshot
+    [Migration("20231130140839_teste2")]
+    partial class teste2
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

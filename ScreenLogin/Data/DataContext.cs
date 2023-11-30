@@ -10,7 +10,6 @@ namespace ScreenLogin.Data
 {
     public class DataContext : DbContext
     {
-        public DbSet<UsuarioLoginModel> UsuariosLogins { get; set; }
         public DbSet<UsuarioModel> Usuarios { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

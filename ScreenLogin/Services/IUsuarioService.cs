@@ -10,7 +10,8 @@ namespace ScreenLogin.Services
 {
     public interface IUsuarioService
     {
-        void InserirUsuario(UsuarioModel usuario);
+        UsuarioModel InserirUsuario(UsuarioModel usuario);
+        UsuarioModel ObterUsuarioPeloNomeDeUsuario(string NomeDoUsuario);
         UsuarioModel AutenticarUsuario(string nomeDeUsuario, string senha);
     }
 }

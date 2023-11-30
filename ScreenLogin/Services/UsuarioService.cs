@@ -24,10 +24,18 @@ namespace ScreenLogin.Services
                 .FirstOrDefault(u => u.NomeDeUsuarioParaLogin == nomeDeUsuario && u.Senha == senha);
         }
 
-        public void InserirUsuario(UsuarioModel usuario)
+        public UsuarioModel ObterUsuarioPeloNomeDeUsuario(string NomeDoUsuario)
+        {
+            var buscaUsuario = _dbContext.Usuarios.FirstOrDefault(u => u.NomeDeUsuarioParaLogin == NomeDoUsuario);
+            return buscaUsuario;
+        }
+
+        public UsuarioModel InserirUsuario(UsuarioModel usuario)
         {   
             _dbContext.Usuarios.Add(usuario);
             _dbContext.SaveChanges();
+            return(usuario);
         }
+
     }
 }

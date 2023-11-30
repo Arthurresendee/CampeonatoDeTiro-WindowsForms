@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
+            lbl_usuarioExistente = new Label();
+            lbl_confirmaSenha = new Label();
             btn_cadastrar = new Button();
             txt_confirmarSenha = new TextBox();
             txt_NomeDeUsuario = new TextBox();
@@ -56,6 +58,8 @@
             // panel1
             // 
             panel1.BorderStyle = BorderStyle.FixedSingle;
+            panel1.Controls.Add(lbl_usuarioExistente);
+            panel1.Controls.Add(lbl_confirmaSenha);
             panel1.Controls.Add(btn_cadastrar);
             panel1.Controls.Add(txt_confirmarSenha);
             panel1.Controls.Add(txt_NomeDeUsuario);
@@ -78,6 +82,30 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(469, 390);
             panel1.TabIndex = 0;
+            panel1.Paint += panel1_Paint;
+            // 
+            // lbl_usuarioExistente
+            // 
+            lbl_usuarioExistente.AutoSize = true;
+            lbl_usuarioExistente.Font = new Font("Segoe UI", 7F, FontStyle.Regular, GraphicsUnit.Point);
+            lbl_usuarioExistente.ForeColor = Color.Red;
+            lbl_usuarioExistente.Location = new Point(324, 305);
+            lbl_usuarioExistente.Name = "lbl_usuarioExistente";
+            lbl_usuarioExistente.Size = new Size(89, 12);
+            lbl_usuarioExistente.TabIndex = 17;
+            lbl_usuarioExistente.Text = "Usuário já existente";
+            lbl_usuarioExistente.Click += lbl_usuarioExistente_Click;
+            // 
+            // lbl_confirmaSenha
+            // 
+            lbl_confirmaSenha.AutoSize = true;
+            lbl_confirmaSenha.Font = new Font("Segoe UI", 7F, FontStyle.Regular, GraphicsUnit.Point);
+            lbl_confirmaSenha.ForeColor = Color.Red;
+            lbl_confirmaSenha.Location = new Point(100, 354);
+            lbl_confirmaSenha.Name = "lbl_confirmaSenha";
+            lbl_confirmaSenha.Size = new Size(110, 12);
+            lbl_confirmaSenha.TabIndex = 5;
+            lbl_confirmaSenha.Text = "Senha não corresponde";
             // 
             // btn_cadastrar
             // 
@@ -248,6 +276,7 @@
             txt_nomeCompleto.Name = "txt_nomeCompleto";
             txt_nomeCompleto.Size = new Size(358, 23);
             txt_nomeCompleto.TabIndex = 2;
+            txt_nomeCompleto.TextChanged += txt_nomeCompleto_TextChanged;
             // 
             // label2
             // 
@@ -311,5 +340,7 @@
         private TextBox txt_senha;
         private Label label7;
         private Button btn_cadastrar;
+        private Label lbl_confirmaSenha;
+        private Label lbl_usuarioExistente;
     }
 }
