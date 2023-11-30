@@ -116,7 +116,7 @@
             btn_cadastrar.TabIndex = 16;
             btn_cadastrar.Text = "Cadastrar";
             btn_cadastrar.UseVisualStyleBackColor = true;
-            btn_cadastrar.Click += btn_cadastrar_Click;
+            btn_cadastrar.Click += button1_Click;
             // 
             // txt_confirmarSenha
             // 
