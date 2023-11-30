@@ -82,7 +82,6 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(469, 390);
             panel1.TabIndex = 0;
-            panel1.Paint += panel1_Paint;
             // 
             // lbl_usuarioExistente
             // 
@@ -94,7 +93,6 @@
             lbl_usuarioExistente.Size = new Size(89, 12);
             lbl_usuarioExistente.TabIndex = 17;
             lbl_usuarioExistente.Text = "Usuário já existente";
-            lbl_usuarioExistente.Click += lbl_usuarioExistente_Click;
             // 
             // lbl_confirmaSenha
             // 
@@ -118,7 +116,7 @@
             btn_cadastrar.TabIndex = 16;
             btn_cadastrar.Text = "Cadastrar";
             btn_cadastrar.UseVisualStyleBackColor = true;
-            btn_cadastrar.Click += button1_Click;
+            btn_cadastrar.Click += btn_cadastrar_Click;
             // 
             // txt_confirmarSenha
             // 
