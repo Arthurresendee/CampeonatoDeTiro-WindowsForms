@@ -49,10 +49,18 @@ namespace ScreenLogin
             {
                 _usuarioService.InserirUsuario(novoUsuario);
                 MessageBox.Show("Usuario Inserido com sucesso");
+                this.Close();
             }
 
         }
 
+        #region ---
+        //O método ValidarUsuario retorna false se hover algum erro dentro da lista de erros retornados
+        //pelo método estático getValidationErros() da classe (Validacao), que recebe como parâmetro, uma classe do tipo usuarioModel.
+        //Essa classe faz a verificação dos dataAnnotations(regras individuais de campos na criação de um objeto.).
+        //A medida que é verificao cada campo, se houver erros de validação, é adicionado à uma lista e posteriormente retornada.
+        //Logo em seguida, o Método Any() irá verificar há erro em algum campo. Se houver, irá retorna um MessageBox() para cada erro.
+        #endregion
         private bool ValidarUsuario(UsuarioModel usuario)
         {
             var validationResults = Validacao.getValidationErros(usuario);
@@ -61,6 +69,12 @@ namespace ScreenLogin
             {
                 foreach (var error in validationResults)
                 {
+                    //switch (error)
+                    //{
+                    //    case 
+                    //    default:
+                    //        break;
+                    //}
                     MessageBox.Show((error.ErrorMessage));
                 }
 

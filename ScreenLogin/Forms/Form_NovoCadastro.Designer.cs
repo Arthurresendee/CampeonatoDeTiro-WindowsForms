@@ -183,7 +183,7 @@
             // radioButton3
             // 
             radioButton3.AutoSize = true;
-            radioButton3.Location = new Point(30, 72);
+            radioButton3.Location = new Point(25, 65);
             radioButton3.Name = "radioButton3";
             radioButton3.Size = new Size(111, 19);
             radioButton3.TabIndex = 2;
@@ -195,7 +195,7 @@
             // radioButton2
             // 
             radioButton2.AutoSize = true;
-            radioButton2.Location = new Point(30, 47);
+            radioButton2.Location = new Point(25, 43);
             radioButton2.Name = "radioButton2";
             radioButton2.Size = new Size(75, 19);
             radioButton2.TabIndex = 1;
@@ -207,7 +207,7 @@
             // radioButton1
             // 
             radioButton1.AutoSize = true;
-            radioButton1.Location = new Point(30, 22);
+            radioButton1.Location = new Point(25, 22);
             radioButton1.Name = "radioButton1";
             radioButton1.Size = new Size(80, 19);
             radioButton1.TabIndex = 0;

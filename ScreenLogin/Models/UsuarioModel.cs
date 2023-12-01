@@ -20,11 +20,6 @@ namespace ScreenLogin.Models
         [Required(ErrorMessage = "Informe o seu email")]
         [RegularExpression(".+\\@.+\\..+", ErrorMessage = "Informe um email válido...")]
         public string? Email { get; set; }
-
-
-        [Required]
-        [Display(Name = "Data do pedido")]
-        [DisplayFormat(DataFormatString = "mm/dd/yyyy")]
         public DateTime? DataDeNascimento { get; set; }
         public Genero? GeneroUsuario { get; set; }
         public string? NumeroDeTelefone { get; set; }
