@@ -38,20 +38,19 @@ namespace ScreenLogin
                 Senha = txt_senha.Text,
                 ConfirmaSenha = txt_confirmarSenha.Text
             };
-            var retornoValidacao = ValidarUsuario(novoUsuario);
+            var usuarioValidado = ValidarUsuario(novoUsuario);
 
-            if (!retornoValidacao)
-            {
-                //ações a serem tomadas caso haja algum erro de validação.
-                return;
-            }
-            else
+            if (usuarioValidado)
             {
                 _usuarioService.InserirUsuario(novoUsuario);
                 MessageBox.Show("Usuario Inserido com sucesso");
                 this.Close();
             }
-
+            else
+            {
+                //ações a serem tomadas caso haja algum erro de validação.
+                return;
+            }
         }
 
         #region ---
@@ -69,12 +68,6 @@ namespace ScreenLogin
             {
                 foreach (var error in validationResults)
                 {
-                    //switch (error)
-                    //{
-                    //    case 
-                    //    default:
-                    //        break;
-                    //}
                     MessageBox.Show((error.ErrorMessage));
                 }
 
