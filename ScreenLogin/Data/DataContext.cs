@@ -14,8 +14,8 @@ namespace ScreenLogin.Data
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            //optionsBuilder.UseSqlServer("Data Source=DESKTOP-AJ8AD1P;Initial Catalog=LoginWF;Persist Security Info=True;User ID=sa;Password=root;Connect Timeout=180;Encrypt=False");
-            optionsBuilder.UseSqlServer("Data Source=ARTHUREMANUEL;Initial Catalog=LoginWF;Persist Security Info=True;User ID=sa;Password=root;Connect Timeout=180;Encrypt=False");
+            optionsBuilder.UseSqlServer("Data Source=DESKTOP-AJ8AD1P;Initial Catalog=LoginWF;Persist Security Info=True;User ID=sa;Password=root;Connect Timeout=180;Encrypt=False");
+            //optionsBuilder.UseSqlServer("Data Source=ARTHUREMANUEL;Initial Catalog=LoginWF;Persist Security Info=True;User ID=sa;Password=root;Connect Timeout=180;Encrypt=False");
         }
     }
 }
