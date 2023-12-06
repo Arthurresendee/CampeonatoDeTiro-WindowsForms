@@ -21,7 +21,7 @@ namespace ScreenLogin.Models
         [RegularExpression(".+\\@.+\\..+", ErrorMessage = "Informe um email válido...")]
         public string? Email { get; set; }
         public DateTime? DataDeNascimento { get; set; }
-        public Genero? GeneroUsuario { get; set; }
+        public Genero? GeneroUsuario { get; set; } = null; // se nenhuma opção for marcada, será nulo.
         public string? NumeroDeTelefone { get; set; }
 
         //Nome De Usuario Para Login
@@ -42,9 +42,9 @@ namespace ScreenLogin.Models
 
         public enum Genero
         {
-            masculino = 0,
-            Feminino = 1,
-            PrefiroNaoDizer = 2
+            masculino,
+            Feminino,
+            PrefiroNaoDizer
         }
     }
 }

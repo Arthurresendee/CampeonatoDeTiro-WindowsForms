@@ -31,8 +31,10 @@ namespace ScreenLogin
             {
                 NomeCompleto = txt_nomeCompleto.Text,
                 Email = txt_email.Text,
-                //novoUsuario.DataDeNascimento = txt_DataDeNascimento.Text; Arrumar data De Nascimento
-                //novoUsuario.GeneroUsuario = gpb_genero.Text; Arrumar genero
+                DataDeNascimento = dtp_Nascimento.Value,
+                GeneroUsuario = radioButton1.Checked ? UsuarioModel.Genero.masculino :
+                                radioButton2.Checked ? UsuarioModel.Genero.Feminino :
+                                radioButton3.Checked ? UsuarioModel.Genero.PrefiroNaoDizer : null,
                 NumeroDeTelefone = txt_numeroDeTelefone.Text,
                 NomeDeUsuarioParaLogin = txt_NomeDeUsuario.Text,
                 Senha = txt_senha.Text,
