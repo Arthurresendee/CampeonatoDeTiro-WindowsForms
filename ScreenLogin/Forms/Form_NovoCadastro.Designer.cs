@@ -29,9 +29,16 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
+            panel2 = new Panel();
+            txt_DataDeAniversarioInvalida = new TextBox();
+            txt_senhasNaoCoincidem = new TextBox();
+            textBox4 = new TextBox();
+            txt_emailInvalido = new TextBox();
+            txt_usuarioExistente = new TextBox();
+            txt_numeroDeTelefoneInvalido = new TextBox();
+            txt_nomeInvalido = new TextBox();
             dtp_Nascimento = new DateTimePicker();
-            lbl_usuarioExistente = new Label();
-            lbl_confirmaSenha = new Label();
+            label6 = new Label();
             btn_cadastrar = new Button();
             txt_confirmarSenha = new TextBox();
             txt_NomeDeUsuario = new TextBox();
@@ -43,7 +50,6 @@
             radioButton3 = new RadioButton();
             radioButton2 = new RadioButton();
             radioButton1 = new RadioButton();
-            label6 = new Label();
             label3 = new Label();
             txt_email = new TextBox();
             txt_numeroDeTelefone = new TextBox();
@@ -51,127 +57,230 @@
             txt_nomeCompleto = new TextBox();
             label2 = new Label();
             label1 = new Label();
-            panel1.SuspendLayout();
+            panel2.SuspendLayout();
             gpb_genero.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
             // 
+            panel1.BackColor = SystemColors.Highlight;
             panel1.BorderStyle = BorderStyle.FixedSingle;
-            panel1.Controls.Add(dtp_Nascimento);
-            panel1.Controls.Add(lbl_usuarioExistente);
-            panel1.Controls.Add(label6);
-            panel1.Controls.Add(lbl_confirmaSenha);
-            panel1.Controls.Add(btn_cadastrar);
-            panel1.Controls.Add(txt_confirmarSenha);
-            panel1.Controls.Add(txt_NomeDeUsuario);
-            panel1.Controls.Add(label5);
-            panel1.Controls.Add(label8);
-            panel1.Controls.Add(txt_senha);
-            panel1.Controls.Add(label7);
-            panel1.Controls.Add(gpb_genero);
-            panel1.Controls.Add(label3);
-            panel1.Controls.Add(txt_email);
-            panel1.Controls.Add(txt_numeroDeTelefone);
-            panel1.Controls.Add(label4);
-            panel1.Controls.Add(txt_nomeCompleto);
-            panel1.Controls.Add(label2);
-            panel1.Controls.Add(label1);
+            panel1.Dock = DockStyle.Left;
             panel1.ForeColor = Color.Transparent;
-            panel1.Location = new Point(185, 12);
+            panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(469, 417);
+            panel1.Size = new Size(341, 461);
             panel1.TabIndex = 0;
+            panel1.Paint += panel1_Paint_1;
+            // 
+            // panel2
+            // 
+            panel2.BackColor = Color.WhiteSmoke;
+            panel2.Controls.Add(txt_DataDeAniversarioInvalida);
+            panel2.Controls.Add(txt_senhasNaoCoincidem);
+            panel2.Controls.Add(textBox4);
+            panel2.Controls.Add(txt_emailInvalido);
+            panel2.Controls.Add(txt_usuarioExistente);
+            panel2.Controls.Add(txt_numeroDeTelefoneInvalido);
+            panel2.Controls.Add(txt_nomeInvalido);
+            panel2.Controls.Add(dtp_Nascimento);
+            panel2.Controls.Add(label6);
+            panel2.Controls.Add(btn_cadastrar);
+            panel2.Controls.Add(txt_confirmarSenha);
+            panel2.Controls.Add(txt_NomeDeUsuario);
+            panel2.Controls.Add(label5);
+            panel2.Controls.Add(label8);
+            panel2.Controls.Add(txt_senha);
+            panel2.Controls.Add(label7);
+            panel2.Controls.Add(gpb_genero);
+            panel2.Controls.Add(label3);
+            panel2.Controls.Add(txt_email);
+            panel2.Controls.Add(txt_numeroDeTelefone);
+            panel2.Controls.Add(label4);
+            panel2.Controls.Add(txt_nomeCompleto);
+            panel2.Controls.Add(label2);
+            panel2.Controls.Add(label1);
+            panel2.Dock = DockStyle.Right;
+            panel2.ForeColor = SystemColors.MenuHighlight;
+            panel2.Location = new Point(341, 0);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(543, 461);
+            panel2.TabIndex = 1;
+            // 
+            // txt_DataDeAniversarioInvalida
+            // 
+            txt_DataDeAniversarioInvalida.BackColor = Color.WhiteSmoke;
+            txt_DataDeAniversarioInvalida.BorderStyle = BorderStyle.None;
+            txt_DataDeAniversarioInvalida.Font = new Font("Segoe UI", 7F, FontStyle.Regular, GraphicsUnit.Point);
+            txt_DataDeAniversarioInvalida.ForeColor = Color.Red;
+            txt_DataDeAniversarioInvalida.Location = new Point(316, 219);
+            txt_DataDeAniversarioInvalida.Name = "txt_DataDeAniversarioInvalida";
+            txt_DataDeAniversarioInvalida.Size = new Size(163, 13);
+            txt_DataDeAniversarioInvalida.TabIndex = 50;
+            txt_DataDeAniversarioInvalida.Text = "Data De Aniversário Inválida";
+            txt_DataDeAniversarioInvalida.TextAlign = HorizontalAlignment.Right;
+            // 
+            // txt_senhasNaoCoincidem
+            // 
+            txt_senhasNaoCoincidem.BackColor = Color.WhiteSmoke;
+            txt_senhasNaoCoincidem.BorderStyle = BorderStyle.None;
+            txt_senhasNaoCoincidem.Font = new Font("Segoe UI", 7F, FontStyle.Regular, GraphicsUnit.Point);
+            txt_senhasNaoCoincidem.ForeColor = Color.Red;
+            txt_senhasNaoCoincidem.Location = new Point(351, 380);
+            txt_senhasNaoCoincidem.Name = "txt_senhasNaoCoincidem";
+            txt_senhasNaoCoincidem.Size = new Size(128, 13);
+            txt_senhasNaoCoincidem.TabIndex = 49;
+            txt_senhasNaoCoincidem.Text = "Senhas não coincidem";
+            txt_senhasNaoCoincidem.TextAlign = HorizontalAlignment.Right;
+            // 
+            // textBox4
+            // 
+            textBox4.BackColor = Color.WhiteSmoke;
+            textBox4.BorderStyle = BorderStyle.None;
+            textBox4.Font = new Font("Segoe UI", 7F, FontStyle.Regular, GraphicsUnit.Point);
+            textBox4.ForeColor = Color.Red;
+            textBox4.Location = new Point(128, 380);
+            textBox4.Name = "textBox4";
+            textBox4.Size = new Size(122, 13);
+            textBox4.TabIndex = 48;
+            textBox4.Text = "Deve conter 8 caracteres";
+            textBox4.TextAlign = HorizontalAlignment.Right;
+            // 
+            // txt_emailInvalido
+            // 
+            txt_emailInvalido.BackColor = Color.WhiteSmoke;
+            txt_emailInvalido.BorderStyle = BorderStyle.None;
+            txt_emailInvalido.Font = new Font("Segoe UI", 7F, FontStyle.Regular, GraphicsUnit.Point);
+            txt_emailInvalido.ForeColor = Color.Red;
+            txt_emailInvalido.Location = new Point(316, 172);
+            txt_emailInvalido.Name = "txt_emailInvalido";
+            txt_emailInvalido.Size = new Size(163, 13);
+            txt_emailInvalido.TabIndex = 47;
+            txt_emailInvalido.Text = "Email Inválido";
+            txt_emailInvalido.TextAlign = HorizontalAlignment.Right;
+            // 
+            // txt_usuarioExistente
+            // 
+            txt_usuarioExistente.BackColor = Color.WhiteSmoke;
+            txt_usuarioExistente.BorderStyle = BorderStyle.None;
+            txt_usuarioExistente.Font = new Font("Segoe UI", 7F, FontStyle.Regular, GraphicsUnit.Point);
+            txt_usuarioExistente.ForeColor = Color.Red;
+            txt_usuarioExistente.Location = new Point(283, 325);
+            txt_usuarioExistente.Name = "txt_usuarioExistente";
+            txt_usuarioExistente.Size = new Size(196, 13);
+            txt_usuarioExistente.TabIndex = 46;
+            txt_usuarioExistente.Text = "Já Existe um usuário com este nome";
+            txt_usuarioExistente.TextAlign = HorizontalAlignment.Right;
+            // 
+            // txt_numeroDeTelefoneInvalido
+            // 
+            txt_numeroDeTelefoneInvalido.BackColor = Color.WhiteSmoke;
+            txt_numeroDeTelefoneInvalido.BorderStyle = BorderStyle.None;
+            txt_numeroDeTelefoneInvalido.Font = new Font("Segoe UI", 7F, FontStyle.Regular, GraphicsUnit.Point);
+            txt_numeroDeTelefoneInvalido.ForeColor = Color.Red;
+            txt_numeroDeTelefoneInvalido.Location = new Point(316, 269);
+            txt_numeroDeTelefoneInvalido.Name = "txt_numeroDeTelefoneInvalido";
+            txt_numeroDeTelefoneInvalido.Size = new Size(163, 13);
+            txt_numeroDeTelefoneInvalido.TabIndex = 45;
+            txt_numeroDeTelefoneInvalido.Text = "Numero de telefone inválido";
+            txt_numeroDeTelefoneInvalido.TextAlign = HorizontalAlignment.Right;
+            // 
+            // txt_nomeInvalido
+            // 
+            txt_nomeInvalido.BackColor = Color.WhiteSmoke;
+            txt_nomeInvalido.BorderStyle = BorderStyle.None;
+            txt_nomeInvalido.Font = new Font("Segoe UI", 7F, FontStyle.Regular, GraphicsUnit.Point);
+            txt_nomeInvalido.ForeColor = Color.Red;
+            txt_nomeInvalido.Location = new Point(316, 125);
+            txt_nomeInvalido.Name = "txt_nomeInvalido";
+            txt_nomeInvalido.Size = new Size(163, 13);
+            txt_nomeInvalido.TabIndex = 43;
+            txt_nomeInvalido.Text = "Nome Inválido";
+            txt_nomeInvalido.TextAlign = HorizontalAlignment.Right;
             // 
             // dtp_Nascimento
             // 
-            dtp_Nascimento.Location = new Point(55, 165);
+            dtp_Nascimento.Location = new Point(65, 196);
             dtp_Nascimento.Name = "dtp_Nascimento";
-            dtp_Nascimento.Size = new Size(358, 23);
-            dtp_Nascimento.TabIndex = 18;
+            dtp_Nascimento.Size = new Size(414, 23);
+            dtp_Nascimento.TabIndex = 37;
             // 
-            // lbl_usuarioExistente
+            // label6
             // 
-            lbl_usuarioExistente.AutoSize = true;
-            lbl_usuarioExistente.Font = new Font("Segoe UI", 7F, FontStyle.Regular, GraphicsUnit.Point);
-            lbl_usuarioExistente.ForeColor = Color.Red;
-            lbl_usuarioExistente.Location = new Point(324, 292);
-            lbl_usuarioExistente.Name = "lbl_usuarioExistente";
-            lbl_usuarioExistente.Size = new Size(89, 12);
-            lbl_usuarioExistente.TabIndex = 17;
-            lbl_usuarioExistente.Text = "Usuário já existente";
-            // 
-            // lbl_confirmaSenha
-            // 
-            lbl_confirmaSenha.AutoSize = true;
-            lbl_confirmaSenha.Font = new Font("Segoe UI", 7F, FontStyle.Regular, GraphicsUnit.Point);
-            lbl_confirmaSenha.ForeColor = Color.Red;
-            lbl_confirmaSenha.Location = new Point(284, 352);
-            lbl_confirmaSenha.Name = "lbl_confirmaSenha";
-            lbl_confirmaSenha.Size = new Size(110, 12);
-            lbl_confirmaSenha.TabIndex = 5;
-            lbl_confirmaSenha.Text = "Senha não corresponde";
+            label6.AutoSize = true;
+            label6.Font = new Font("Segoe UI", 8F, FontStyle.Regular, GraphicsUnit.Point);
+            label6.ForeColor = SystemColors.MenuHighlight;
+            label6.Location = new Point(71, 179);
+            label6.Name = "label6";
+            label6.Size = new Size(111, 13);
+            label6.TabIndex = 29;
+            label6.Text = "Data De Nascimento";
             // 
             // btn_cadastrar
             // 
+            btn_cadastrar.BackColor = SystemColors.Highlight;
             btn_cadastrar.FlatAppearance.BorderColor = Color.Yellow;
             btn_cadastrar.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
-            btn_cadastrar.ForeColor = SystemColors.WindowText;
-            btn_cadastrar.Location = new Point(176, 370);
+            btn_cadastrar.ForeColor = SystemColors.HighlightText;
+            btn_cadastrar.Location = new Point(211, 412);
             btn_cadastrar.Name = "btn_cadastrar";
-            btn_cadastrar.Size = new Size(109, 25);
-            btn_cadastrar.TabIndex = 16;
+            btn_cadastrar.Size = new Size(109, 41);
+            btn_cadastrar.TabIndex = 35;
             btn_cadastrar.Text = "Cadastrar";
-            btn_cadastrar.UseVisualStyleBackColor = true;
-            btn_cadastrar.Click += button1_Click;
+            btn_cadastrar.UseVisualStyleBackColor = false;
+            btn_cadastrar.Click += btn_cadastrar_Click;
             // 
             // txt_confirmarSenha
             // 
-            txt_confirmarSenha.Location = new Point(239, 326);
+            txt_confirmarSenha.Location = new Point(270, 357);
             txt_confirmarSenha.Name = "txt_confirmarSenha";
-            txt_confirmarSenha.Size = new Size(155, 23);
-            txt_confirmarSenha.TabIndex = 15;
+            txt_confirmarSenha.Size = new Size(209, 23);
+            txt_confirmarSenha.TabIndex = 34;
             // 
             // txt_NomeDeUsuario
             // 
-            txt_NomeDeUsuario.Location = new Point(239, 266);
+            txt_NomeDeUsuario.Location = new Point(270, 302);
             txt_NomeDeUsuario.Name = "txt_NomeDeUsuario";
-            txt_NomeDeUsuario.Size = new Size(174, 23);
-            txt_NomeDeUsuario.TabIndex = 8;
+            txt_NomeDeUsuario.Size = new Size(209, 23);
+            txt_NomeDeUsuario.TabIndex = 28;
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(239, 248);
+            label5.ForeColor = SystemColors.MenuHighlight;
+            label5.Location = new Point(270, 284);
             label5.Name = "label5";
             label5.Size = new Size(100, 15);
-            label5.TabIndex = 7;
+            label5.TabIndex = 27;
             label5.Text = "Nome De Usuario";
+            label5.Click += label5_Click;
             // 
             // label8
             // 
             label8.AutoSize = true;
-            label8.Location = new Point(239, 308);
+            label8.ForeColor = SystemColors.MenuHighlight;
+            label8.Location = new Point(270, 339);
             label8.Name = "label8";
             label8.Size = new Size(96, 15);
-            label8.TabIndex = 14;
+            label8.TabIndex = 33;
             label8.Text = "Confirmar Senha";
-            label8.Click += label8_Click;
+            label8.Click += label8_Click_1;
             // 
             // txt_senha
             // 
-            txt_senha.Location = new Point(55, 326);
+            txt_senha.Location = new Point(65, 357);
             txt_senha.Name = "txt_senha";
-            txt_senha.Size = new Size(155, 23);
-            txt_senha.TabIndex = 13;
+            txt_senha.Size = new Size(187, 23);
+            txt_senha.TabIndex = 32;
             // 
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(55, 308);
+            label7.ForeColor = SystemColors.MenuHighlight;
+            label7.Location = new Point(65, 339);
             label7.Name = "label7";
             label7.Size = new Size(39, 15);
-            label7.TabIndex = 12;
+            label7.TabIndex = 31;
             label7.Text = "Senha";
             // 
             // gpb_genero
@@ -179,137 +288,129 @@
             gpb_genero.Controls.Add(radioButton3);
             gpb_genero.Controls.Add(radioButton2);
             gpb_genero.Controls.Add(radioButton1);
-            gpb_genero.ForeColor = Color.White;
-            gpb_genero.Location = new Point(55, 202);
+            gpb_genero.ForeColor = SystemColors.Highlight;
+            gpb_genero.Location = new Point(65, 233);
             gpb_genero.Name = "gpb_genero";
-            gpb_genero.Size = new Size(155, 87);
-            gpb_genero.TabIndex = 11;
+            gpb_genero.Size = new Size(187, 92);
+            gpb_genero.TabIndex = 30;
             gpb_genero.TabStop = false;
             gpb_genero.Text = "Gênero";
             // 
             // radioButton3
             // 
             radioButton3.AutoSize = true;
-            radioButton3.Location = new Point(25, 60);
+            radioButton3.ForeColor = SystemColors.MenuHighlight;
+            radioButton3.Location = new Point(43, 65);
             radioButton3.Name = "radioButton3";
             radioButton3.Size = new Size(111, 19);
             radioButton3.TabIndex = 2;
             radioButton3.TabStop = true;
             radioButton3.Text = "Prefiro não dizer";
             radioButton3.UseVisualStyleBackColor = true;
-            radioButton3.CheckedChanged += radioButton3_CheckedChanged;
             // 
             // radioButton2
             // 
             radioButton2.AutoSize = true;
-            radioButton2.Location = new Point(25, 38);
+            radioButton2.ForeColor = SystemColors.MenuHighlight;
+            radioButton2.Location = new Point(43, 41);
             radioButton2.Name = "radioButton2";
             radioButton2.Size = new Size(75, 19);
             radioButton2.TabIndex = 1;
             radioButton2.TabStop = true;
             radioButton2.Text = "Feminino";
             radioButton2.UseVisualStyleBackColor = true;
-            radioButton2.CheckedChanged += radioButton2_CheckedChanged;
             // 
             // radioButton1
             // 
             radioButton1.AutoSize = true;
-            radioButton1.Location = new Point(25, 17);
+            radioButton1.ForeColor = SystemColors.MenuHighlight;
+            radioButton1.Location = new Point(43, 17);
             radioButton1.Name = "radioButton1";
             radioButton1.Size = new Size(80, 19);
             radioButton1.TabIndex = 0;
             radioButton1.TabStop = true;
             radioButton1.Text = "Masculino";
             radioButton1.UseVisualStyleBackColor = true;
-            radioButton1.CheckedChanged += radioButton1_CheckedChanged;
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Segoe UI", 8F, FontStyle.Regular, GraphicsUnit.Point);
-            label6.Location = new Point(61, 148);
-            label6.Name = "label6";
-            label6.Size = new Size(111, 13);
-            label6.TabIndex = 9;
-            label6.Text = "Data De Nascimento";
             // 
             // label3
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 8F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.Location = new Point(239, 193);
+            label3.ForeColor = SystemColors.MenuHighlight;
+            label3.Location = new Point(270, 229);
             label3.Name = "label3";
             label3.Size = new Size(112, 13);
-            label3.TabIndex = 3;
+            label3.TabIndex = 22;
             label3.Text = "Numero De Telefone";
             // 
             // txt_email
             // 
-            txt_email.Location = new Point(55, 118);
+            txt_email.Location = new Point(65, 149);
             txt_email.Name = "txt_email";
-            txt_email.Size = new Size(358, 23);
-            txt_email.TabIndex = 6;
+            txt_email.Size = new Size(414, 23);
+            txt_email.TabIndex = 26;
             // 
             // txt_numeroDeTelefone
             // 
-            txt_numeroDeTelefone.Location = new Point(239, 210);
+            txt_numeroDeTelefone.Location = new Point(270, 246);
             txt_numeroDeTelefone.Name = "txt_numeroDeTelefone";
-            txt_numeroDeTelefone.Size = new Size(174, 23);
-            txt_numeroDeTelefone.TabIndex = 4;
+            txt_numeroDeTelefone.Size = new Size(209, 23);
+            txt_numeroDeTelefone.TabIndex = 23;
             // 
             // label4
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 8F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.Location = new Point(55, 101);
+            label4.ForeColor = SystemColors.MenuHighlight;
+            label4.Location = new Point(65, 133);
             label4.Name = "label4";
             label4.Size = new Size(34, 13);
-            label4.TabIndex = 5;
+            label4.TabIndex = 25;
             label4.Text = "Email";
             // 
             // txt_nomeCompleto
             // 
             txt_nomeCompleto.BorderStyle = BorderStyle.FixedSingle;
-            txt_nomeCompleto.Location = new Point(55, 71);
+            txt_nomeCompleto.Location = new Point(65, 102);
             txt_nomeCompleto.Name = "txt_nomeCompleto";
-            txt_nomeCompleto.Size = new Size(358, 23);
-            txt_nomeCompleto.TabIndex = 2;
-            txt_nomeCompleto.TextChanged += txt_nomeCompleto_TextChanged;
+            txt_nomeCompleto.Size = new Size(414, 23);
+            txt_nomeCompleto.TabIndex = 21;
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 8F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(55, 54);
+            label2.ForeColor = SystemColors.MenuHighlight;
+            label2.Location = new Point(65, 85);
             label2.Name = "label2";
             label2.Size = new Size(90, 13);
-            label2.TabIndex = 1;
+            label2.TabIndex = 20;
             label2.Text = "Nome Completo";
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.ForeColor = SystemColors.Window;
-            label1.Location = new Point(160, 8);
+            label1.ForeColor = SystemColors.Highlight;
+            label1.Location = new Point(195, 39);
             label1.Name = "label1";
             label1.Size = new Size(141, 28);
-            label1.TabIndex = 0;
+            label1.TabIndex = 19;
             label1.Text = "Novo Usuário";
-            label1.Click += label1_Click;
             // 
             // Form_NovoCadastro
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
-            ClientSize = new Size(830, 465);
+            ClientSize = new Size(884, 461);
+            Controls.Add(panel2);
             Controls.Add(panel1);
             ForeColor = Color.White;
             Name = "Form_NovoCadastro";
             Text = "Novo Cadastro";
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
+            panel2.ResumeLayout(false);
+            panel2.PerformLayout();
             gpb_genero.ResumeLayout(false);
             gpb_genero.PerformLayout();
             ResumeLayout(false);
@@ -318,27 +419,33 @@
         #endregion
 
         private Panel panel1;
-        private Label label1;
+        private Panel panel2;
+        private DateTimePicker dtp_Nascimento;
         private Label label6;
+        private Button btn_cadastrar;
+        private TextBox txt_confirmarSenha;
         private TextBox txt_NomeDeUsuario;
         private Label label5;
-        private TextBox txt_email;
-        private Label label4;
-        private TextBox txt_numeroDeTelefone;
-        private Label label3;
-        private TextBox txt_nomeCompleto;
-        private Label label2;
+        private Label label8;
+        private TextBox txt_senha;
+        private Label label7;
         private GroupBox gpb_genero;
         private RadioButton radioButton3;
         private RadioButton radioButton2;
         private RadioButton radioButton1;
-        private TextBox txt_confirmarSenha;
-        private Label label8;
-        private TextBox txt_senha;
-        private Label label7;
-        private Button btn_cadastrar;
-        private Label lbl_confirmaSenha;
-        private Label lbl_usuarioExistente;
-        private DateTimePicker dtp_Nascimento;
+        private Label label3;
+        private TextBox txt_email;
+        private TextBox txt_numeroDeTelefone;
+        private Label label4;
+        private TextBox txt_nomeCompleto;
+        private Label label2;
+        private Label label1;
+        private TextBox txt_nomeInvalido;
+        private TextBox txt_emailInvalido;
+        private TextBox txt_usuarioExistente;
+        private TextBox txt_numeroDeTelefoneInvalido;
+        private TextBox txt_senhasNaoCoincidem;
+        private TextBox textBox4;
+        private TextBox txt_DataDeAniversarioInvalida;
     }
 }

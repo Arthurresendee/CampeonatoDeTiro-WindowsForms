@@ -12,26 +12,25 @@ namespace ScreenLogin.Models
     {
         public int Id { get; set; }
         //Nome Completo
-        [Required(ErrorMessage = "O nome do usuário é obrigatório", AllowEmptyStrings = false)]
-        [RegularExpression(@"^[a-zA-Z''-'\s]{1,40}$", ErrorMessage ="Números e caracteres especiais não são permitidos no nome.")]
+        [Required(ErrorMessage = "Nome invalido", AllowEmptyStrings = false)]
         public string? NomeCompleto { get; set; }
 
         //Email
-        [Required(ErrorMessage = "Informe o seu email")]
-        [RegularExpression(".+\\@.+\\..+", ErrorMessage = "Informe um email válido...")]
+        [Required(ErrorMessage = "Email invalido")]
+        [RegularExpression(".+\\@.+\\..+", ErrorMessage = "Email Iválido")]
         public string? Email { get; set; }
         public DateTime? DataDeNascimento { get; set; }
         public Genero? GeneroUsuario { get; set; } = null; // se nenhuma opção for marcada, será nulo.
         public string? NumeroDeTelefone { get; set; }
 
         //Nome De Usuario Para Login
-        [Required(ErrorMessage = "O nome do usuário é obrigatório", AllowEmptyStrings = false)]
+        [Required(ErrorMessage = "Nome de usuario invalido", AllowEmptyStrings = false)]
         public string NomeDeUsuarioParaLogin { get; set; }
 
         //Senha
         [Required]
         [DataType(DataType.Password)]
-        [StringLength(10, MinimumLength = 4)]
+        [StringLength(10, MinimumLength = 4,ErrorMessage ="Senha deve ter 8 caracteres")]
         public string Senha { get; set; }
 
         //ConfirmaSenha

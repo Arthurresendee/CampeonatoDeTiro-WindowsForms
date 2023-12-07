@@ -21,8 +21,7 @@ namespace ScreenLogin
         {
             _usuarioService = usuarioService;
             InitializeComponent();
-            lbl_confirmaSenha.Enabled = false;
-            lbl_usuarioExistente.Enabled = false;
+            radioButton3.Checked = true;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -114,6 +113,25 @@ namespace ScreenLogin
         private void txt_nomeCompleto_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void panel1_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btn_cadastrar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label8_Click_1(object sender, EventArgs e)
+        {
         }
     }
 }

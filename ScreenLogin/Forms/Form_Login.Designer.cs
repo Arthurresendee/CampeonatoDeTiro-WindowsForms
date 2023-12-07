@@ -86,10 +86,10 @@
             linkLabel1.LinkColor = Color.FromArgb(64, 64, 64);
             linkLabel1.Location = new Point(110, 406);
             linkLabel1.Name = "linkLabel1";
-            linkLabel1.Size = new Size(118, 27);
+            linkLabel1.Size = new Size(126, 27);
             linkLabel1.TabIndex = 16;
             linkLabel1.TabStop = true;
-            linkLabel1.Text = "arrTech@gmail.com";
+            linkLabel1.Text = "ARRTech@gmail.com";
             // 
             // label10
             // 
@@ -273,9 +273,9 @@
             label5.AutoSize = true;
             label5.Location = new Point(227, 410);
             label5.Name = "label5";
-            label5.Size = new Size(56, 15);
+            label5.Size = new Size(52, 15);
             label5.TabIndex = 10;
-            label5.Text = "ARR Tech";
+            label5.Text = "ARRTech";
             // 
             // label4
             // 
@@ -330,6 +330,7 @@
             Controls.Add(panel1);
             Controls.Add(panel2);
             ForeColor = SystemColors.ControlLightLight;
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             Name = "Form_Login";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Login";
