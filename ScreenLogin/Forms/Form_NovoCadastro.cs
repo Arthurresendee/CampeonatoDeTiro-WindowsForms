@@ -22,9 +22,16 @@ namespace ScreenLogin
             _usuarioService = usuarioService;
             InitializeComponent();
             radioButton3.Checked = true;
+            txt_nomeInvalido.Visible = false;
+            txt_emailInvalido.Visible = false;
+            txt_DataDeAniversarioInvalida.Visible = false;
+            txt_numeroDeTelefoneInvalido.Visible = false;
+            txt_usuarioInvalido.Visible = false;
+            txt_senhaConfirmadaInvalida.Visible = false;
+            txt_senhaInvalida.Visible = false;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btn_cadastrar_Click(object sender, EventArgs e)
         {
             var novoUsuario = new UsuarioModel
             {
@@ -69,12 +76,19 @@ namespace ScreenLogin
             {
                 foreach (var error in validationResults)
                 {
-                    MessageBox.Show((error.ErrorMessage));
+                    if (error.ErrorMessage.Equals("Nome invalido"))
+                    {
+                        txt_nomeInvalido.Visible = true;
+                    }
                 }
 
                 return false;
             }
             return true;
+        }
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -120,10 +134,6 @@ namespace ScreenLogin
 
         }
 
-        private void btn_cadastrar_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void label5_Click(object sender, EventArgs e)
         {

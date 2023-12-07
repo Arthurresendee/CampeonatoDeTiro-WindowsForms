@@ -31,10 +31,10 @@
             panel1 = new Panel();
             panel2 = new Panel();
             txt_DataDeAniversarioInvalida = new TextBox();
-            txt_senhasNaoCoincidem = new TextBox();
-            textBox4 = new TextBox();
+            txt_senhaConfirmadaInvalida = new TextBox();
+            txt_senhaInvalida = new TextBox();
             txt_emailInvalido = new TextBox();
-            txt_usuarioExistente = new TextBox();
+            txt_usuarioInvalido = new TextBox();
             txt_numeroDeTelefoneInvalido = new TextBox();
             txt_nomeInvalido = new TextBox();
             dtp_Nascimento = new DateTimePicker();
@@ -77,10 +77,10 @@
             // 
             panel2.BackColor = Color.WhiteSmoke;
             panel2.Controls.Add(txt_DataDeAniversarioInvalida);
-            panel2.Controls.Add(txt_senhasNaoCoincidem);
-            panel2.Controls.Add(textBox4);
+            panel2.Controls.Add(txt_senhaConfirmadaInvalida);
+            panel2.Controls.Add(txt_senhaInvalida);
             panel2.Controls.Add(txt_emailInvalido);
-            panel2.Controls.Add(txt_usuarioExistente);
+            panel2.Controls.Add(txt_usuarioInvalido);
             panel2.Controls.Add(txt_numeroDeTelefoneInvalido);
             panel2.Controls.Add(txt_nomeInvalido);
             panel2.Controls.Add(dtp_Nascimento);
@@ -120,31 +120,31 @@
             txt_DataDeAniversarioInvalida.Text = "Data De Aniversário Inválida";
             txt_DataDeAniversarioInvalida.TextAlign = HorizontalAlignment.Right;
             // 
-            // txt_senhasNaoCoincidem
+            // txt_senhaConfirmadaInvalida
             // 
-            txt_senhasNaoCoincidem.BackColor = Color.WhiteSmoke;
-            txt_senhasNaoCoincidem.BorderStyle = BorderStyle.None;
-            txt_senhasNaoCoincidem.Font = new Font("Segoe UI", 7F, FontStyle.Regular, GraphicsUnit.Point);
-            txt_senhasNaoCoincidem.ForeColor = Color.Red;
-            txt_senhasNaoCoincidem.Location = new Point(351, 380);
-            txt_senhasNaoCoincidem.Name = "txt_senhasNaoCoincidem";
-            txt_senhasNaoCoincidem.Size = new Size(128, 13);
-            txt_senhasNaoCoincidem.TabIndex = 49;
-            txt_senhasNaoCoincidem.Text = "Senhas não coincidem";
-            txt_senhasNaoCoincidem.TextAlign = HorizontalAlignment.Right;
+            txt_senhaConfirmadaInvalida.BackColor = Color.WhiteSmoke;
+            txt_senhaConfirmadaInvalida.BorderStyle = BorderStyle.None;
+            txt_senhaConfirmadaInvalida.Font = new Font("Segoe UI", 7F, FontStyle.Regular, GraphicsUnit.Point);
+            txt_senhaConfirmadaInvalida.ForeColor = Color.Red;
+            txt_senhaConfirmadaInvalida.Location = new Point(351, 380);
+            txt_senhaConfirmadaInvalida.Name = "txt_senhaConfirmadaInvalida";
+            txt_senhaConfirmadaInvalida.Size = new Size(128, 13);
+            txt_senhaConfirmadaInvalida.TabIndex = 49;
+            txt_senhaConfirmadaInvalida.Text = "Senhas não coincidem";
+            txt_senhaConfirmadaInvalida.TextAlign = HorizontalAlignment.Right;
             // 
-            // textBox4
+            // txt_senhaInvalida
             // 
-            textBox4.BackColor = Color.WhiteSmoke;
-            textBox4.BorderStyle = BorderStyle.None;
-            textBox4.Font = new Font("Segoe UI", 7F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox4.ForeColor = Color.Red;
-            textBox4.Location = new Point(128, 380);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(122, 13);
-            textBox4.TabIndex = 48;
-            textBox4.Text = "Deve conter 8 caracteres";
-            textBox4.TextAlign = HorizontalAlignment.Right;
+            txt_senhaInvalida.BackColor = Color.WhiteSmoke;
+            txt_senhaInvalida.BorderStyle = BorderStyle.None;
+            txt_senhaInvalida.Font = new Font("Segoe UI", 7F, FontStyle.Regular, GraphicsUnit.Point);
+            txt_senhaInvalida.ForeColor = Color.Red;
+            txt_senhaInvalida.Location = new Point(128, 380);
+            txt_senhaInvalida.Name = "txt_senhaInvalida";
+            txt_senhaInvalida.Size = new Size(122, 13);
+            txt_senhaInvalida.TabIndex = 48;
+            txt_senhaInvalida.Text = "Deve conter 8 caracteres";
+            txt_senhaInvalida.TextAlign = HorizontalAlignment.Right;
             // 
             // txt_emailInvalido
             // 
@@ -159,18 +159,18 @@
             txt_emailInvalido.Text = "Email Inválido";
             txt_emailInvalido.TextAlign = HorizontalAlignment.Right;
             // 
-            // txt_usuarioExistente
+            // txt_usuarioInvalido
             // 
-            txt_usuarioExistente.BackColor = Color.WhiteSmoke;
-            txt_usuarioExistente.BorderStyle = BorderStyle.None;
-            txt_usuarioExistente.Font = new Font("Segoe UI", 7F, FontStyle.Regular, GraphicsUnit.Point);
-            txt_usuarioExistente.ForeColor = Color.Red;
-            txt_usuarioExistente.Location = new Point(283, 325);
-            txt_usuarioExistente.Name = "txt_usuarioExistente";
-            txt_usuarioExistente.Size = new Size(196, 13);
-            txt_usuarioExistente.TabIndex = 46;
-            txt_usuarioExistente.Text = "Já Existe um usuário com este nome";
-            txt_usuarioExistente.TextAlign = HorizontalAlignment.Right;
+            txt_usuarioInvalido.BackColor = Color.WhiteSmoke;
+            txt_usuarioInvalido.BorderStyle = BorderStyle.None;
+            txt_usuarioInvalido.Font = new Font("Segoe UI", 7F, FontStyle.Regular, GraphicsUnit.Point);
+            txt_usuarioInvalido.ForeColor = Color.Red;
+            txt_usuarioInvalido.Location = new Point(283, 325);
+            txt_usuarioInvalido.Name = "txt_usuarioInvalido";
+            txt_usuarioInvalido.Size = new Size(196, 13);
+            txt_usuarioInvalido.TabIndex = 46;
+            txt_usuarioInvalido.Text = "Já Existe um usuário com este nome";
+            txt_usuarioInvalido.TextAlign = HorizontalAlignment.Right;
             // 
             // txt_numeroDeTelefoneInvalido
             // 
@@ -370,7 +370,6 @@
             // 
             // txt_nomeCompleto
             // 
-            txt_nomeCompleto.BorderStyle = BorderStyle.FixedSingle;
             txt_nomeCompleto.Location = new Point(65, 102);
             txt_nomeCompleto.Name = "txt_nomeCompleto";
             txt_nomeCompleto.Size = new Size(414, 23);
@@ -408,6 +407,7 @@
             Controls.Add(panel1);
             ForeColor = Color.White;
             Name = "Form_NovoCadastro";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Novo Cadastro";
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
@@ -442,10 +442,10 @@
         private Label label1;
         private TextBox txt_nomeInvalido;
         private TextBox txt_emailInvalido;
-        private TextBox txt_usuarioExistente;
+        private TextBox txt_usuarioInvalido;
         private TextBox txt_numeroDeTelefoneInvalido;
-        private TextBox txt_senhasNaoCoincidem;
-        private TextBox textBox4;
+        private TextBox txt_senhaConfirmadaInvalida;
+        private TextBox txt_senhaInvalida;
         private TextBox txt_DataDeAniversarioInvalida;
     }
 }

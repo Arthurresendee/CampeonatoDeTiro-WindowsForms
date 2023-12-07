@@ -220,3 +220,4 @@ C:\projetos\screen-login identity\LoginScreen-Identity-WindowsForms\ScreenLogin\
 C:\projetos\screen-login identity\LoginScreen-Identity-WindowsForms\ScreenLogin\obj\Debug\net7.0-windows\ScreenLogin.genruntimeconfig.cache
 C:\projetos\screen-login identity\LoginScreen-Identity-WindowsForms\ScreenLogin\obj\Debug\net7.0-windows\ref\ScreenLogin.dll
 C:\projetos\screen-login identity\LoginScreen-Identity-WindowsForms\ScreenLogin\obj\Debug\net7.0-windows\ScreenLogin.Properties.Resources.resources
+C:\Projects\Screen-Identity-Windows-Forms\LoginScreen-Identity-WindowsForms\ScreenLogin\obj\Debug\net7.0-windows\ScreenLogin.Properties.Resources.resources

@@ -63,6 +63,7 @@
             // panel1
             // 
             panel1.BackColor = Color.WhiteSmoke;
+            panel1.BorderStyle = BorderStyle.FixedSingle;
             panel1.Controls.Add(linkLabel1);
             panel1.Controls.Add(label10);
             panel1.Controls.Add(label8);
@@ -144,7 +145,7 @@
             // 
             // panel3
             // 
-            panel3.BackColor = Color.White;
+            panel3.BackColor = Color.WhiteSmoke;
             panel3.Controls.Add(label6);
             panel3.Controls.Add(pictureBox2);
             panel3.Controls.Add(txt_usuario);
@@ -187,7 +188,7 @@
             // 
             // panel4
             // 
-            panel4.BackColor = Color.White;
+            panel4.BackColor = Color.WhiteSmoke;
             panel4.Controls.Add(label7);
             panel4.Controls.Add(pictureBox3);
             panel4.Controls.Add(txt_senha);
