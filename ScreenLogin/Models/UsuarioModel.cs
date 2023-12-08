@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
 using Microsoft.EntityFrameworkCore;
+using System.Runtime.CompilerServices;
 
 namespace ScreenLogin.Models
 {
@@ -13,28 +14,30 @@ namespace ScreenLogin.Models
         public int Id { get; set; }
         //Nome Completo
         [Required(ErrorMessage = "Nome invalido", AllowEmptyStrings = false)]
-        public string? NomeCompleto { get; set; }
+        public string NomeCompleto { get; set; }
 
         //Email
         [Required(ErrorMessage = "Email invalido")]
         [RegularExpression(".+\\@.+\\..+", ErrorMessage = "Formato de Email Invalido")]
-        public string? Email { get; set; }
-        public DateTime? DataDeNascimento { get; set; }
+        public string Email { get; set; }
+        public DateTime DataDeNascimento { get; set; }
         public Genero? GeneroUsuario { get; set; } = null; // se nenhuma opção for marcada, será nulo.
+
+        [StringLength(11,ErrorMessage = "Numero de telefone invalido")]
         public string? NumeroDeTelefone { get; set; }
 
         //Nome De Usuario Para Login
-        [Required(ErrorMessage = "Nome de usuario invalido", AllowEmptyStrings = false)]
+        [Required(ErrorMessage = "Nome de usuario invalido")]
         public string NomeDeUsuarioParaLogin { get; set; }
 
         //Senha
-        [Required]
+        [Required(ErrorMessage = "Senha deve ter 4 caracteres no mínimo")]
+        [MinLength(4,ErrorMessage = "Senha deve ter 4 caracteres no mínimo")]
         [DataType(DataType.Password)]
-        [StringLength(10, MinimumLength = 4,ErrorMessage ="Senha deve ter 8 caracteres")]
         public string Senha { get; set; }
 
         //ConfirmaSenha
-        [Required]
+        [Required(ErrorMessage = "As senhas não coincidem")]
         [DataType(DataType.Password)]
         [Compare("Senha", ErrorMessage = "As senhas não coincidem")]
         public string ConfirmaSenha { get; set; }

@@ -139,12 +139,13 @@
             txt_senhaInvalida.BorderStyle = BorderStyle.None;
             txt_senhaInvalida.Font = new Font("Segoe UI", 7F, FontStyle.Regular, GraphicsUnit.Point);
             txt_senhaInvalida.ForeColor = Color.Red;
-            txt_senhaInvalida.Location = new Point(128, 380);
+            txt_senhaInvalida.Location = new Point(82, 380);
             txt_senhaInvalida.Name = "txt_senhaInvalida";
-            txt_senhaInvalida.Size = new Size(122, 13);
+            txt_senhaInvalida.Size = new Size(168, 13);
             txt_senhaInvalida.TabIndex = 48;
-            txt_senhaInvalida.Text = "Deve conter 8 caracteres";
+            txt_senhaInvalida.Text = "Senha deve ter 4 caracteres no mínimo";
             txt_senhaInvalida.TextAlign = HorizontalAlignment.Right;
+            txt_senhaInvalida.TextChanged += txt_senhaInvalida_TextChanged;
             // 
             // txt_emailInvalido
             // 

@@ -21,18 +21,12 @@ namespace ScreenLogin
         {
             _usuarioService = usuarioService;
             InitializeComponent();
-            radioButton3.Checked = true;
-            txt_nomeInvalido.Visible = false;
-            txt_emailInvalido.Visible = false;
-            txt_DataDeAniversarioInvalida.Visible = false;
-            txt_numeroDeTelefoneInvalido.Visible = false;
-            txt_usuarioInvalido.Visible = false;
-            txt_senhaConfirmadaInvalida.Visible = false;
-            txt_senhaInvalida.Visible = false;
+            InicializarVisibilidadeDeLabelsDeErros();
         }
 
         private void btn_cadastrar_Click(object sender, EventArgs e)
         {
+            InicializarVisibilidadeDeLabelsDeErros();
             var novoUsuario = new UsuarioModel
             {
                 NomeCompleto = txt_nomeCompleto.Text,
@@ -76,15 +70,22 @@ namespace ScreenLogin
             {
                 foreach (var error in validationResults)
                 {
-                    if (error.ErrorMessage.Equals("Nome invalido"))
+                    if (error.ErrorMessage == "Nome invalido")
                         txt_nomeInvalido.Visible = true;
-                    if (error.ErrorMessage.Equals("Email invalido") || error.ErrorMessage.Equals("Formato de Email Invalido"))
+
+                    if (error.ErrorMessage == "Email invalido" || error.ErrorMessage == "Formato de Email Invalido")
                         txt_emailInvalido.Visible = true;
-                    if (error.ErrorMessage.Equals("Nome de usuario invalido"))
-                        txt_nomeInvalido.Visible = true;
-                    if (error.ErrorMessage.Equals("Senha deve ter 8 caracteres"))
+
+                    if (error.ErrorMessage == "Numero de telefone invalido")
+                        txt_numeroDeTelefoneInvalido.Visible = true;
+
+                    if (error.ErrorMessage == "Nome de usuario invalido")
+                        txt_usuarioInvalido.Visible = true;
+
+                    if (error.ErrorMessage == "Senha deve ter 4 caracteres no mínimo")
                         txt_senhaInvalida.Visible = true;
-                    if (error.ErrorMessage.Equals("As senhas não coincidem"))
+
+                    if (error.ErrorMessage == "As senhas não coincidem")
                         txt_senhaConfirmadaInvalida.Visible = true;
                 }
 
@@ -92,9 +93,21 @@ namespace ScreenLogin
             }
             return true;
         }
+
+        public void InicializarVisibilidadeDeLabelsDeErros()
+        {
+            radioButton3.Checked = true;
+            txt_nomeInvalido.Visible = false;
+            txt_emailInvalido.Visible = false;
+            txt_DataDeAniversarioInvalida.Visible = false;
+            txt_numeroDeTelefoneInvalido.Visible = false;
+            txt_usuarioInvalido.Visible = false;
+            txt_senhaConfirmadaInvalida.Visible = false;
+            txt_senhaInvalida.Visible = false;
+        }
         private void button1_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -148,6 +161,11 @@ namespace ScreenLogin
 
         private void label8_Click_1(object sender, EventArgs e)
         {
+        }
+
+        private void txt_senhaInvalida_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
