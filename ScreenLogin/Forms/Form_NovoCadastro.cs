@@ -77,9 +77,15 @@ namespace ScreenLogin
                 foreach (var error in validationResults)
                 {
                     if (error.ErrorMessage.Equals("Nome invalido"))
-                    {
                         txt_nomeInvalido.Visible = true;
-                    }
+                    if (error.ErrorMessage.Equals("Email invalido") || error.ErrorMessage.Equals("Formato de Email Invalido"))
+                        txt_emailInvalido.Visible = true;
+                    if (error.ErrorMessage.Equals("Nome de usuario invalido"))
+                        txt_nomeInvalido.Visible = true;
+                    if (error.ErrorMessage.Equals("Senha deve ter 8 caracteres"))
+                        txt_senhaInvalida.Visible = true;
+                    if (error.ErrorMessage.Equals("As senhas não coincidem"))
+                        txt_senhaConfirmadaInvalida.Visible = true;
                 }
 
                 return false;

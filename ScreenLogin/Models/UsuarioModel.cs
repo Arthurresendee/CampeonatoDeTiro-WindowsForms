@@ -17,7 +17,7 @@ namespace ScreenLogin.Models
 
         //Email
         [Required(ErrorMessage = "Email invalido")]
-        [RegularExpression(".+\\@.+\\..+", ErrorMessage = "Email Iválido")]
+        [RegularExpression(".+\\@.+\\..+", ErrorMessage = "Formato de Email Invalido")]
         public string? Email { get; set; }
         public DateTime? DataDeNascimento { get; set; }
         public Genero? GeneroUsuario { get; set; } = null; // se nenhuma opção for marcada, será nulo.
@@ -36,7 +36,7 @@ namespace ScreenLogin.Models
         //ConfirmaSenha
         [Required]
         [DataType(DataType.Password)]
-        [Compare("Senha", ErrorMessage = "As senhas não coincidem.")]
+        [Compare("Senha", ErrorMessage = "As senhas não coincidem")]
         public string ConfirmaSenha { get; set; }
 
         public enum Genero
