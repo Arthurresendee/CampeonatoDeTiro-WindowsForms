@@ -5,7 +5,7 @@ namespace ScreenLogin.Models
 {
     public static class Validacao
     {
-        public static IEnumerable<ValidationResult> getValidationErros(object obj)
+        public static List<ValidationResult> getValidationErros(object obj)
         {
             var validationResultList = new List<ValidationResult>();
             var context = new ValidationContext(obj, null, null);

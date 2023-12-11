@@ -11,6 +11,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Threading.Tasks.Sources;
 using System.Windows.Forms;
+using System.ComponentModel.DataAnnotations;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace ScreenLogin
 {
@@ -40,18 +42,12 @@ namespace ScreenLogin
                 Senha = txt_senha.Text,
                 ConfirmaSenha = txt_confirmarSenha.Text
             };
-            var usuarioValidado = ValidarUsuario(novoUsuario);
-
+            var usuarioValidado = ValidarModeloDeUsuario(novoUsuario);
             if (usuarioValidado)
             {
                 _usuarioService.InserirUsuario(novoUsuario);
                 MessageBox.Show("Usuario Inserido com sucesso");
                 this.Close();
-            }
-            else
-            {
-                //ações a serem tomadas caso haja algum erro de validação.
-                return;
             }
         }
 
@@ -62,33 +58,45 @@ namespace ScreenLogin
         //A medida que é verificao cada campo, se houver erros de validação, é adicionado à uma lista e posteriormente retornada.
         //Logo em seguida, o Método Any() irá verificar há erro em algum campo. Se houver, irá retorna um MessageBox() para cada erro.
         #endregion
-        private bool ValidarUsuario(UsuarioModel usuario)
+        private bool ValidarModeloDeUsuario(UsuarioModel usuario)
         {
-            var validationResults = Validacao.getValidationErros(usuario);
+            var listaDeErrosNoModelo = new List<ValidationResult>();
+            listaDeErrosNoModelo = Validacao.getValidationErros(usuario);
 
-            if (validationResults.Any())
+            #region [Adiciona erro do campo NomeDeUsuarioParaLogin para listadeErrosNoModelo]
+            var usuarioValidado = _usuarioService.ObterNomeDeUsuario(usuario.NomeDeUsuarioParaLogin);
+            if (usuarioValidado)
             {
-                foreach (var error in validationResults)
-                {
-                    if (error.ErrorMessage == "Nome invalido")
-                        txt_nomeInvalido.Visible = true;
+                var error = new ValidationResult("UsuarioDeLoginInvalido");
+                listaDeErrosNoModelo.Add(error);
+            }
+            #endregion
 
-                    if (error.ErrorMessage == "Email invalido" || error.ErrorMessage == "Formato de Email Invalido")
-                        txt_emailInvalido.Visible = true;
-
-                    if (error.ErrorMessage == "Numero de telefone invalido")
-                        txt_numeroDeTelefoneInvalido.Visible = true;
-
-                    if (error.ErrorMessage == "Nome de usuario invalido")
-                        txt_usuarioInvalido.Visible = true;
-
-                    if (error.ErrorMessage == "Senha deve ter 4 caracteres no mínimo")
-                        txt_senhaInvalida.Visible = true;
-
-                    if (error.ErrorMessage == "As senhas não coincidem")
-                        txt_senhaConfirmadaInvalida.Visible = true;
-                }
-
+            if (listaDeErrosNoModelo.Any())
+            {
+                foreach (var error in listaDeErrosNoModelo)
+                    switch (error.ErrorMessage)
+                    {
+                        case "Nome invalido":
+                            txt_nomeInvalido.Visible = true;
+                            break;
+                        case "Email invalido":
+                        case "Formato de Email Invalido":
+                            txt_emailInvalido.Visible = true;
+                            break;
+                        case "Numero de telefone invalido":
+                            txt_numeroDeTelefoneInvalido.Visible = true;
+                            break;
+                        case "UsuarioDeLoginInvalido":
+                            txt_usuarioInvalido.Visible = true;
+                            break;
+                        case "Senha deve ter 4 caracteres no mínimo":
+                            txt_senhaInvalida.Visible = true;
+                            break;
+                        case "As senhas não coincidem":
+                            txt_senhaConfirmadaInvalida.Visible = true;
+                            break;
+                    }
                 return false;
             }
             return true;

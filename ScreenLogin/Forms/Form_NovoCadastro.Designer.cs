@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_NovoCadastro));
             panel1 = new Panel();
+            pictureBox1 = new PictureBox();
             panel2 = new Panel();
             txt_DataDeAniversarioInvalida = new TextBox();
             txt_senhaConfirmadaInvalida = new TextBox();
@@ -58,11 +59,10 @@
             txt_nomeCompleto = new TextBox();
             label2 = new Label();
             label1 = new Label();
-            pictureBox1 = new PictureBox();
             panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel2.SuspendLayout();
             gpb_genero.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -77,6 +77,16 @@
             panel1.Size = new Size(341, 461);
             panel1.TabIndex = 0;
             panel1.Paint += panel1_Paint_1;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(75, 38);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(171, 180);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 0;
+            pictureBox1.TabStop = false;
             // 
             // panel2
             // 
@@ -173,9 +183,10 @@
             txt_usuarioInvalido.ForeColor = Color.Red;
             txt_usuarioInvalido.Location = new Point(283, 325);
             txt_usuarioInvalido.Name = "txt_usuarioInvalido";
+            txt_usuarioInvalido.RightToLeft = RightToLeft.No;
             txt_usuarioInvalido.Size = new Size(196, 13);
             txt_usuarioInvalido.TabIndex = 46;
-            txt_usuarioInvalido.Text = "Já Existe um usuário com este nome";
+            txt_usuarioInvalido.Text = "Nome de usuario inválido.";
             txt_usuarioInvalido.TextAlign = HorizontalAlignment.Right;
             // 
             // txt_numeroDeTelefoneInvalido
@@ -403,16 +414,6 @@
             label1.TabIndex = 19;
             label1.Text = "Novo Usuário";
             // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(75, 38);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(171, 180);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
-            // 
             // Form_NovoCadastro
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -426,11 +427,11 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Novo Cadastro";
             panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
             gpb_genero.ResumeLayout(false);
             gpb_genero.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
