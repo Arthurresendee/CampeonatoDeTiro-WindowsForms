@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_NovoCadastro));
             panel1 = new Panel();
             panel2 = new Panel();
             txt_DataDeAniversarioInvalida = new TextBox();
@@ -57,14 +58,18 @@
             txt_nomeCompleto = new TextBox();
             label2 = new Label();
             label1 = new Label();
+            pictureBox1 = new PictureBox();
+            panel1.SuspendLayout();
             panel2.SuspendLayout();
             gpb_genero.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // panel1
             // 
             panel1.BackColor = SystemColors.Highlight;
             panel1.BorderStyle = BorderStyle.FixedSingle;
+            panel1.Controls.Add(pictureBox1);
             panel1.Dock = DockStyle.Left;
             panel1.ForeColor = Color.Transparent;
             panel1.Location = new Point(0, 0);
@@ -398,6 +403,16 @@
             label1.TabIndex = 19;
             label1.Text = "Novo Usuário";
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(75, 38);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(171, 180);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 0;
+            pictureBox1.TabStop = false;
+            // 
             // Form_NovoCadastro
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -410,10 +425,12 @@
             Name = "Form_NovoCadastro";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Novo Cadastro";
+            panel1.ResumeLayout(false);
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
             gpb_genero.ResumeLayout(false);
             gpb_genero.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
@@ -448,5 +465,6 @@
         private TextBox txt_senhaConfirmadaInvalida;
         private TextBox txt_senhaInvalida;
         private TextBox txt_DataDeAniversarioInvalida;
+        private PictureBox pictureBox1;
     }
 }

@@ -63,7 +63,6 @@
             // panel1
             // 
             panel1.BackColor = Color.WhiteSmoke;
-            panel1.BorderStyle = BorderStyle.FixedSingle;
             panel1.Controls.Add(linkLabel1);
             panel1.Controls.Add(label10);
             panel1.Controls.Add(label8);
