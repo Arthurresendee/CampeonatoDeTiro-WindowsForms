@@ -1,0 +1,9 @@
+﻿
+
+										Idéias de melhora
+
+alguma estratégia para que a primeira requisição seja mais rápida, já que ela é a única que demora.
+
+Talvez algum jeito de fazer com que a verificação do campo "NomeDeUsuarioParaLogin" seja feita de forma mais rápida.
+	talvez algum relacionamento um uma tabela por exemplo:TB_NomeUsuario. Onde o nome de todos os usuario cadastrados ficam armazenado nessa tabela.
+	assim, meio que ao invés de ir em cada registro pra verificar se o campo "NomeDeUsuarioParaLogin" corresponde ao nome que está sendo cadastrado.

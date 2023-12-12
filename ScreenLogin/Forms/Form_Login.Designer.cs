@@ -86,10 +86,10 @@
             linkLabel1.LinkColor = Color.FromArgb(64, 64, 64);
             linkLabel1.Location = new Point(110, 406);
             linkLabel1.Name = "linkLabel1";
-            linkLabel1.Size = new Size(126, 27);
+            linkLabel1.Size = new Size(159, 27);
             linkLabel1.TabIndex = 16;
             linkLabel1.TabStop = true;
-            linkLabel1.Text = "ARRTech@gmail.com";
+            linkLabel1.Text = "arrtechsolucoes@gmail.com";
             // 
             // label10
             // 
@@ -271,11 +271,11 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(227, 410);
+            label5.Location = new Point(185, 410);
             label5.Name = "label5";
-            label5.Size = new Size(52, 15);
+            label5.Size = new Size(99, 15);
             label5.TabIndex = 10;
-            label5.Text = "ARRTech";
+            label5.Text = "ARRTechSolucoes";
             // 
             // label4
             // 
@@ -285,6 +285,7 @@
             label4.Size = new Size(66, 15);
             label4.TabIndex = 9;
             label4.Text = "Develop by";
+            label4.Click += label4_Click;
             // 
             // pictureBox1
             // 

@@ -23,12 +23,12 @@ namespace ScreenLogin
         {
             _usuarioService = usuarioService;
             InitializeComponent();
-            InicializarVisibilidadeDeLabelsDeErros();
+            InicializarLabelsInvisiveis();
         }
 
         private void btn_cadastrar_Click(object sender, EventArgs e)
         {
-            InicializarVisibilidadeDeLabelsDeErros();
+            InicializarLabelsInvisiveis();
             var novoUsuario = new UsuarioModel
             {
                 NomeCompleto = txt_nomeCompleto.Text,
@@ -51,20 +51,15 @@ namespace ScreenLogin
             }
         }
 
-        #region ---
-        //O método ValidarUsuario retorna false se hover algum erro dentro da lista de erros retornados
-        //pelo método estático getValidationErros() da classe (Validacao), que recebe como parâmetro, uma classe do tipo usuarioModel.
-        //Essa classe faz a verificação dos dataAnnotations(regras individuais de campos na criação de um objeto.).
-        //A medida que é verificao cada campo, se houver erros de validação, é adicionado à uma lista e posteriormente retornada.
-        //Logo em seguida, o Método Any() irá verificar há erro em algum campo. Se houver, irá retorna um MessageBox() para cada erro.
-        #endregion
+        //O método ValidarUsuario retorna false se hover algum erro dentro da lista de erros retornados pelo método estático getValidationErros() da classe (Validacao), que recebe como parâmetro, uma classe do tipo usuarioModel. Essa classe faz a verificação dos dataAnnotations(regras individuais de campos na criação de um objeto.). A medida que é verificao cada campo, se houver erros de validação, é adicionado à uma lista e posteriormente retornada. Logo em seguida, o Método Any() irá verificar há erro de validação em algum campo. Se houver, irá colocar algumas labels de error visíveis.
         private bool ValidarModeloDeUsuario(UsuarioModel usuario)
         {
-            var listaDeErrosNoModelo = new List<ValidationResult>();
-            listaDeErrosNoModelo = Validacao.getValidationErros(usuario);
+            List<ValidationResult> listaDeErrosNoModelo = Validacao.getValidationErros(usuario);
 
             #region [Adiciona erro do campo NomeDeUsuarioParaLogin para listadeErrosNoModelo]
-            //Como não é possível criar Usuario com NomeDeUsuario igual, já que é usado como login no sistema, eu faco uma consulta pesquisando no banco de dados se há algum registro com o nome recebido no campo do cadastro. Como o retorno é um objeto, vier algum registro, eu crio um erro nesse campo e adiciono na minha lista de erros.
+            //Como não é possível criar Usuario com NomeDeUsuario igual, já que é usado como login no sistema,
+            //eu faco uma consulta pesquisando no banco de dados se há algum registro com o nome recebido no campo do cadastro.
+            //Como o retorno é um objeto, se vier algum registro, eu crio um erro de validação nesse campo e adiciono na minha lista de erros.
             var usuarioModel = _usuarioService.ObterNomeDeUsuario(usuario.NomeDeUsuarioParaLogin);
             if (usuarioModel!= null)
             {
@@ -76,6 +71,7 @@ namespace ScreenLogin
             if (listaDeErrosNoModelo.Any())
             {
                 foreach (var error in listaDeErrosNoModelo)
+                {
                     switch (error.ErrorMessage)
                     {
                         case "Nome invalido":
@@ -89,7 +85,7 @@ namespace ScreenLogin
                             txt_numeroDeTelefoneInvalido.Visible = true;
                             break;
                         case "Nome de usuario invalido":
-                        case "Usuario de login Invalido":
+                        case "Usuario de login Invalido":   //erro de validação que eu criei e adicionei
                             txt_usuarioInvalido.Visible = true;
                             break;
                         case "Senha deve ter 4 caracteres no mínimo":
@@ -97,14 +93,16 @@ namespace ScreenLogin
                             break;
                         case "As senhas não coincidem":
                             txt_senhaConfirmadaInvalida.Visible = true;
-                            break;
+                        break;
                     }
+                }
                 return false;
             }
             return true;
         }
 
-        public void InicializarVisibilidadeDeLabelsDeErros()
+        //Função usada para colocar todas as labels de erro como invisíveis, para assim, quando tiver algum erro específico, eu só mudar para visível
+        public void InicializarLabelsInvisiveis()
         {
             radioButton3.Checked = true;
             txt_nomeInvalido.Visible = false;
@@ -115,6 +113,7 @@ namespace ScreenLogin
             txt_senhaConfirmadaInvalida.Visible = false;
             txt_senhaInvalida.Visible = false;
         }
+
         private void button1_Click(object sender, EventArgs e)
         {
 
