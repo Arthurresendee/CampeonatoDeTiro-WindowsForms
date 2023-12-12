@@ -11,7 +11,7 @@ namespace ScreenLogin.Services
     public interface IUsuarioService
     {
         UsuarioModel InserirUsuario(UsuarioModel usuario);
-        bool ObterNomeDeUsuario(string NomeDoUsuario);
+        UsuarioModel ObterNomeDeUsuario(string NomeDoUsuario);
         UsuarioModel AutenticarUsuario(string nomeDeUsuario, string senha);
     }
 }

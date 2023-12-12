@@ -64,10 +64,11 @@ namespace ScreenLogin
             listaDeErrosNoModelo = Validacao.getValidationErros(usuario);
 
             #region [Adiciona erro do campo NomeDeUsuarioParaLogin para listadeErrosNoModelo]
-            var usuarioValidado = _usuarioService.ObterNomeDeUsuario(usuario.NomeDeUsuarioParaLogin);
-            if (usuarioValidado)
+            //Como não é possível criar Usuario com NomeDeUsuario igual, já que é usado como login no sistema, eu faco uma consulta pesquisando no banco de dados se há algum registro com o nome recebido no campo do cadastro. Como o retorno é um objeto, vier algum registro, eu crio um erro nesse campo e adiciono na minha lista de erros.
+            var usuarioModel = _usuarioService.ObterNomeDeUsuario(usuario.NomeDeUsuarioParaLogin);
+            if (usuarioModel!= null)
             {
-                var error = new ValidationResult("UsuarioDeLoginInvalido");
+                var error = new ValidationResult("Usuario de login Invalido");
                 listaDeErrosNoModelo.Add(error);
             }
             #endregion
@@ -87,7 +88,8 @@ namespace ScreenLogin
                         case "Numero de telefone invalido":
                             txt_numeroDeTelefoneInvalido.Visible = true;
                             break;
-                        case "UsuarioDeLoginInvalido":
+                        case "Nome de usuario invalido":
+                        case "Usuario de login Invalido":
                             txt_usuarioInvalido.Visible = true;
                             break;
                         case "Senha deve ter 4 caracteres no mínimo":
