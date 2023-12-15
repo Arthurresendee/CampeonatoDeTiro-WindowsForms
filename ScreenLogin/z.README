@@ -8,8 +8,10 @@ Talvez algum jeito de fazer com que a verificação do campo "NomeDeUsuarioParaL
 	talvez algum relacionamento um uma tabela por exemplo:TB_NomeUsuario. Onde o nome de todos os usuario cadastrados ficam armazenado nessa tabela.
 	assim, meio que ao invés de ir em cada registro pra verificar se o campo "NomeDeUsuarioParaLogin" corresponde ao nome que está sendo cadastrado.
 
-	Arrumar o campo numero de telefone para não aceitar texto.
+Arrumar o campo numero de telefone para não aceitar texto.
 
-	Arrumar o group box do sexo, pois sempre que definimos um sexo e tentamos cadastrar usuário, ele coloca como padrão o "Prefiro não dizer"
+Arrumar o group box do sexo, pois sempre que definimos um sexo e tentamos cadastrar usuário, ele coloca como padrão o "Prefiro não dizer"
 
-	Colocar algum aviso ou MessageBox em questão da conexão com o banco de dados. Pois quando coloco outra string de conexão e tento rodaro aplicativo, ele trava, meio que fica infinitamente tentando conectar. Não retorna erro nem nada.
+Colocar algum aviso ou MessageBox em questão da conexão com o banco de dados. Pois quando coloco outra string de conexão e tento rodaro aplicativo, ele trava, meio que fica infinitamente tentando conectar. Não retorna erro nem nada.
+
+Colocar o NumeroDeTelefoneComo Como Required, pois a recuperação da senha ou do nome de usuário, fará por parte do número. e adicionar algum serviço para fazer a validação do número durante o cadastro.(Ainda a pensar)
