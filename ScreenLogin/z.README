@@ -15,3 +15,5 @@ Arrumar o group box do sexo, pois sempre que definimos um sexo e tentamos cadast
 Colocar algum aviso ou MessageBox em questão da conexão com o banco de dados. Pois quando coloco outra string de conexão e tento rodaro aplicativo, ele trava, meio que fica infinitamente tentando conectar. Não retorna erro nem nada.
 
 Colocar o NumeroDeTelefoneComo Como Required, pois a recuperação da senha ou do nome de usuário, fará por parte do número. e adicionar algum serviço para fazer a validação do número durante o cadastro.(Ainda a pensar)
+
+Fazer um levantamento de requisitos sobre a continuação do projeto ou até mesmo sobre um projeto novo
