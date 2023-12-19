@@ -21,3 +21,5 @@ Fazer um levantamento de requisitos sobre a continuação do projeto ou até mes
 Para treinar o levantamento de requisitos, eu posso utilizar o chatgpt como sendo o intrevistado enquanto o entrevistador
 
 Criar testes unitários para verificação das nossas funções
+
+criar um banco de dados inMemory com entity framework, e testar com moq, fazendo um mock de um banco de dados inMemory.
