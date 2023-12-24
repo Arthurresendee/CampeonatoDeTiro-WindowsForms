@@ -220,7 +220,7 @@
             dtp_Nascimento.Location = new Point(65, 196);
             dtp_Nascimento.Name = "dtp_Nascimento";
             dtp_Nascimento.Size = new Size(414, 23);
-            dtp_Nascimento.TabIndex = 37;
+            dtp_Nascimento.TabIndex = 3;
             // 
             // label6
             // 
@@ -242,7 +242,7 @@
             btn_cadastrar.Location = new Point(211, 412);
             btn_cadastrar.Name = "btn_cadastrar";
             btn_cadastrar.Size = new Size(109, 41);
-            btn_cadastrar.TabIndex = 35;
+            btn_cadastrar.TabIndex = 12;
             btn_cadastrar.Text = "Cadastrar";
             btn_cadastrar.UseVisualStyleBackColor = false;
             btn_cadastrar.Click += btn_cadastrar_Click;
@@ -252,14 +252,15 @@
             txt_confirmarSenha.Location = new Point(270, 357);
             txt_confirmarSenha.Name = "txt_confirmarSenha";
             txt_confirmarSenha.Size = new Size(209, 23);
-            txt_confirmarSenha.TabIndex = 34;
+            txt_confirmarSenha.TabIndex = 11;
+            txt_confirmarSenha.UseSystemPasswordChar = true;
             // 
             // txt_NomeDeUsuario
             // 
             txt_NomeDeUsuario.Location = new Point(270, 302);
             txt_NomeDeUsuario.Name = "txt_NomeDeUsuario";
             txt_NomeDeUsuario.Size = new Size(209, 23);
-            txt_NomeDeUsuario.TabIndex = 28;
+            txt_NomeDeUsuario.TabIndex = 9;
             // 
             // label5
             // 
@@ -288,7 +289,8 @@
             txt_senha.Location = new Point(65, 357);
             txt_senha.Name = "txt_senha";
             txt_senha.Size = new Size(187, 23);
-            txt_senha.TabIndex = 32;
+            txt_senha.TabIndex = 10;
+            txt_senha.UseSystemPasswordChar = true;
             // 
             // label7
             // 
@@ -309,7 +311,7 @@
             gpb_genero.Location = new Point(65, 233);
             gpb_genero.Name = "gpb_genero";
             gpb_genero.Size = new Size(187, 92);
-            gpb_genero.TabIndex = 30;
+            gpb_genero.TabIndex = 4;
             gpb_genero.TabStop = false;
             gpb_genero.Text = "Gênero";
             // 
@@ -320,8 +322,7 @@
             radioButton3.Location = new Point(43, 65);
             radioButton3.Name = "radioButton3";
             radioButton3.Size = new Size(111, 19);
-            radioButton3.TabIndex = 2;
-            radioButton3.TabStop = true;
+            radioButton3.TabIndex = 7;
             radioButton3.Text = "Prefiro não dizer";
             radioButton3.UseVisualStyleBackColor = true;
             // 
@@ -332,7 +333,7 @@
             radioButton2.Location = new Point(43, 41);
             radioButton2.Name = "radioButton2";
             radioButton2.Size = new Size(75, 19);
-            radioButton2.TabIndex = 1;
+            radioButton2.TabIndex = 6;
             radioButton2.TabStop = true;
             radioButton2.Text = "Feminino";
             radioButton2.UseVisualStyleBackColor = true;
@@ -344,7 +345,7 @@
             radioButton1.Location = new Point(43, 17);
             radioButton1.Name = "radioButton1";
             radioButton1.Size = new Size(80, 19);
-            radioButton1.TabIndex = 0;
+            radioButton1.TabIndex = 5;
             radioButton1.TabStop = true;
             radioButton1.Text = "Masculino";
             radioButton1.UseVisualStyleBackColor = true;
@@ -365,14 +366,14 @@
             txt_email.Location = new Point(65, 149);
             txt_email.Name = "txt_email";
             txt_email.Size = new Size(414, 23);
-            txt_email.TabIndex = 26;
+            txt_email.TabIndex = 2;
             // 
             // txt_numeroDeTelefone
             // 
             txt_numeroDeTelefone.Location = new Point(270, 246);
             txt_numeroDeTelefone.Name = "txt_numeroDeTelefone";
             txt_numeroDeTelefone.Size = new Size(209, 23);
-            txt_numeroDeTelefone.TabIndex = 23;
+            txt_numeroDeTelefone.TabIndex = 8;
             // 
             // label4
             // 
@@ -382,7 +383,7 @@
             label4.Location = new Point(65, 133);
             label4.Name = "label4";
             label4.Size = new Size(34, 13);
-            label4.TabIndex = 25;
+            label4.TabIndex = 13;
             label4.Text = "Email";
             // 
             // txt_nomeCompleto
@@ -390,7 +391,7 @@
             txt_nomeCompleto.Location = new Point(65, 102);
             txt_nomeCompleto.Name = "txt_nomeCompleto";
             txt_nomeCompleto.Size = new Size(414, 23);
-            txt_nomeCompleto.TabIndex = 21;
+            txt_nomeCompleto.TabIndex = 1;
             // 
             // label2
             // 
@@ -400,7 +401,7 @@
             label2.Location = new Point(65, 85);
             label2.Name = "label2";
             label2.Size = new Size(90, 13);
-            label2.TabIndex = 20;
+            label2.TabIndex = 12;
             label2.Text = "Nome Completo";
             // 
             // label1
@@ -411,7 +412,7 @@
             label1.Location = new Point(195, 39);
             label1.Name = "label1";
             label1.Size = new Size(141, 28);
-            label1.TabIndex = 19;
+            label1.TabIndex = 11;
             label1.Text = "Novo Usuário";
             // 
             // Form_NovoCadastro

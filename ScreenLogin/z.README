@@ -10,6 +10,11 @@ Talvez algum jeito de fazer com que a verificação do campo "NomeDeUsuarioParaL
 
 Arrumar o campo numero de telefone para não aceitar texto.
 
+colocar uma mensagem de erro no checkbox de sexo também caso não seja marcado nenhuma das opções. Assim tirar o check padrão que está como "Prefiro não dizer"
+Arrumar o genero para ele não iserir o valor 0, 1, 2 no banco de dados, mas sim, os nomes "Masculino", "Feminino", "Prefiro não dizer"
+
+Arrumar o sistema de tab. Talvez não colocar tab para o check box.
+
 Arrumar o group box do sexo, pois sempre que definimos um sexo e tentamos cadastrar usuário, ele coloca como padrão o "Prefiro não dizer"
 
 Colocar algum aviso ou MessageBox em questão da conexão com o banco de dados. Pois quando coloco outra string de conexão e tento rodaro aplicativo, ele trava, meio que fica infinitamente tentando conectar. Não retorna erro nem nada.

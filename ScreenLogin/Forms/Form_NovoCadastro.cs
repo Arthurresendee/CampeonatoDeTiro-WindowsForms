@@ -56,17 +56,13 @@ namespace ScreenLogin
         {
             List<ValidationResult> listaDeErrosNoModelo = Validacao.getValidationErros(usuario);
 
-            #region [Adiciona erro do campo NomeDeUsuarioParaLogin para listadeErrosNoModelo]
-            //Como não é possível criar Usuario com NomeDeUsuario igual, já que é usado como login no sistema,
-            //eu faco uma consulta pesquisando no banco de dados se há algum registro com o nome recebido no campo do cadastro.
-            //Como o retorno é um objeto, se vier algum registro, eu crio um erro de validação nesse campo e adiciono na minha lista de erros.
+            //Como não é possível criar Usuario com NomeDeUsuario igual, já que é usado como login no sistema, eu faco uma consulta pesquisando no banco de dados se há algum registro com o nome recebido no campo do cadastro. /Como o retorno é um objeto, se vier algum registro, eu crio um erro de validação nesse campo e adiciono na minha lista de erros.
             var usuarioModel = _usuarioService.ObterNomeDeUsuario(usuario.NomeDeUsuarioParaLogin);
-            if (usuarioModel!= null)
+            if (usuarioModel != null)
             {
                 var error = new ValidationResult("Usuario de login Invalido");
                 listaDeErrosNoModelo.Add(error);
             }
-            #endregion
 
             if (listaDeErrosNoModelo.Any())
             {
@@ -85,7 +81,7 @@ namespace ScreenLogin
                             txt_numeroDeTelefoneInvalido.Visible = true;
                             break;
                         case "Nome de usuario invalido":
-                        case "Usuario de login Invalido":   //erro de validação que eu criei e adicionei
+                        case "Usuario de login Invalido":                                       //erro de validação que eu criei e adicionei
                             txt_usuarioInvalido.Visible = true;
                             break;
                         case "Senha deve ter 4 caracteres no mínimo":
@@ -93,7 +89,7 @@ namespace ScreenLogin
                             break;
                         case "As senhas não coincidem":
                             txt_senhaConfirmadaInvalida.Visible = true;
-                        break;
+                            break;
                     }
                 }
                 return false;
