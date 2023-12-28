@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\projetos\\LoginScreen\\ScreenLogin\\ScreenLogin.csproj": {}
+    "C:\\Projects\\Screen-Identity-Windows-Forms\\LoginScreen-Identity-WindowsForms\\ScreenLogin\\ScreenLogin.csproj": {}
   },
   "projects": {
-    "C:\\projetos\\LoginScreen\\ScreenLogin\\ScreenLogin.csproj": {
+    "C:\\Projects\\Screen-Identity-Windows-Forms\\LoginScreen-Identity-WindowsForms\\ScreenLogin\\ScreenLogin.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\projetos\\LoginScreen\\ScreenLogin\\ScreenLogin.csproj",
+        "projectUniqueName": "C:\\Projects\\Screen-Identity-Windows-Forms\\LoginScreen-Identity-WindowsForms\\ScreenLogin\\ScreenLogin.csproj",
         "projectName": "ScreenLogin",
-        "projectPath": "C:\\projetos\\LoginScreen\\ScreenLogin\\ScreenLogin.csproj",
+        "projectPath": "C:\\Projects\\Screen-Identity-Windows-Forms\\LoginScreen-Identity-WindowsForms\\ScreenLogin\\ScreenLogin.csproj",
         "packagesPath": "C:\\Users\\arthu\\.nuget\\packages\\",
-        "outputPath": "C:\\projetos\\LoginScreen\\ScreenLogin\\obj\\",
+        "outputPath": "C:\\Projects\\Screen-Identity-Windows-Forms\\LoginScreen-Identity-WindowsForms\\ScreenLogin\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -87,7 +87,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }

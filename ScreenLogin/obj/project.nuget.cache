@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ehFI2Dcx0YlwoPMKe9sTC/pBgZeFOE9FSYMBZ+fjeEBhwDQWEaOUqEtxyzWNexYmuP1TBTocyfSoH0zJbBCwZA==",
+  "dgSpecHash": "xDKw1EXNiGRPxyXaq42ONYhdQfJ12bzGkMYBb0ZubkAZk0dqWIUopEnUvQolPI9LsUrm1N/DYWmEQZ4t5ForhA==",
   "success": true,
-  "projectFilePath": "C:\\projetos\\LoginScreen\\ScreenLogin\\ScreenLogin.csproj",
+  "projectFilePath": "C:\\Projects\\Screen-Identity-Windows-Forms\\LoginScreen-Identity-WindowsForms\\ScreenLogin\\ScreenLogin.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\arthu\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\arthu\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
